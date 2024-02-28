@@ -1,6 +1,6 @@
 # ShapeLLM: Universal 3D Object Understanding for Embodied Interaction
 
-*We presents ShapeLLM, the first 3D Multimodal Large Language Model designed for embodied interaction, exploring a universal 3D object understanding with 3D point clouds and languages.*
+*We present ShapeLLM, the first 3D Multimodal Large Language Model designed for embodied interaction, exploring a universal 3D object understanding with 3D point clouds and languages.*
 
 [Zekun Qi](https://qizekun.github.io/), [Runpei Dong](https://runpeidong.com/), [Shaochen Zhang](), [Haoran Geng](https://geng-haoran.github.io/), [Chunrui Han](), [Zheng Ge](https://joker316701882.github.io/), [Li Yi](https://ericyi.github.io) and [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html)
 
@@ -23,7 +23,7 @@
     <img src="assets/framework.jpg" width=100% >
 </div>
 
-Codes and checkpoints will release in one week.
+Codes and checkpoints will be released in one week.
 
 
 ## Citation

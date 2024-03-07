@@ -24,6 +24,14 @@
     <img src="assets/framework.jpg" width=100% >
 </div>
 
+1. ShapeLLM is the first 3D Multimodal Large Language Model designed for embodied interaction.
+
+2. ShapeLLM supports single-view colored point cloud input, which can be effortlessly obtained from RGBD cameras.
+
+3. We introduce a robust 3D QA benchmark, 3D MM-Vet, encompassing various variants including single-view, noise jitter, etc.
+
+4. We extend the powerful point encoder architecture, ReCon++, achieving state-of-the-art performance across a range of representation learning tasks.
+
 ## Contents
 - [Install](#install)
 - [Model Zoo](https://github.com/qizekun/ShapeLLM/blob/main/docs/MODEL_ZOO.md)
@@ -147,6 +155,7 @@ sh scripts/pretrain_contrast.sh <exp_name> <path/to/stage1-pre-trained/model>
 ### Classification
 | Model                                                 | Version | OBJ_BG | OBJ_ONLY | PB_T50_RS | MN-40 1k | MN-40 8k |
 |-------------------------------------------------------|---------|--------|----------|-----------|----------|----------|
+| [ACT](https://github.com/RunpeiDong/ACT)              | Small   | 93.29% | 91.91%   | 88.21%    | 93.7%    | 94.0%    |
 | [ReCon](https://github.com/qizekun/ReCon)             | Small   | 95.35% | 93.80%   | 91.26%    | 94.5%    | 94.7%    |
 | [PointGPT](https://github.com/CGuangyan-BIT/PointGPT) | Base    | 95.8%  | 95.2%    | 91.9%     | 94.4%    | 94.6%    |
 | [ReCon++](https://github.com/qizekun/ShapeLLM)        | Base    | 98.62% | 96.21%   | 93.34%    | 94.6%    | 94.8%    |
@@ -213,7 +222,7 @@ If you find ShapeLLM or ReCon++ useful for your research and applications, pleas
 ```bibtex
 
 @article{qi2024shapellm,
-  author = {Qi, Zekun and Dong, Runpei and Zhang, Shaochen and Geng, Haoran and Han, Chunrui and Ge, Zheng and Yi, Li and Ma, Kaisheng},
+  author = {Qi, Zekun and Dong, Runpei and Zhang, Shaochen and Geng, Haoran and Han, Chunrui and Ge, Zheng and Wang, He and Yi, Li and Ma, Kaisheng},
   title = {ShapeLLM: Universal 3D Object Understanding for Embodied Interaction},
   journal = {arXiv preprint arXiv:2402.17766},
   year = {2024},

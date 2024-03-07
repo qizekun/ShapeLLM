@@ -24,13 +24,13 @@
     <img src="assets/framework.jpg" width=100% >
 </div>
 
-1. ShapeLLM is the first 3D Multimodal Large Language Model designed for embodied interaction.
+<span style="color:#FFA07A;">**1.**</span> ShapeLLM is the first 3D Multimodal Large Language Model designed for <span style="color: #fe8e8e;"><b>embodied interaction</b></span>.</li>
 
-2. ShapeLLM supports single-view colored point cloud input, which can be effortlessly obtained from RGBD cameras.
+<span style="color:#87CEEB;">**2.**</span> ShapeLLM supports <span style="color: #fe8e8e;"><b>single-view colored point cloud input</b></span>, which can be effortlessly obtained from RGBD cameras.</li>
 
-3. We introduce a robust 3D QA benchmark, 3D MM-Vet, encompassing various variants including single-view, noise jitter, etc.
+<span style="color:#98FB98;">**3.**</span> We introduce a robust 3D QA benchmark, <span style="color: #fe8e8e;"><b>3D MM-Vet</b></span>, encompassing various variants including single-view, noise jitter, etc.</li>
 
-4. We extend the powerful point encoder architecture, ReCon++, achieving state-of-the-art performance across a range of representation learning tasks.
+<span style="color:#FFB6C1;">**4.**</span> We extend the powerful point encoder architecture, <span style="color: #fe8e8e;"><b>ReCon++</b></span>, achieving state-of-the-art performance across a range of representation learning tasks.</li>
 
 ## Contents
 - [Install](#install)

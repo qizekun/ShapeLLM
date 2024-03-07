@@ -1,0 +1,232 @@
+{"question_id": 0, "point": "000.npy", "text": "How many support bars are there in total?", "category": "General Visual Recognition"}
+{"question_id": 1, "point": "000.npy", "text": "Which one can cause greater damage to it, fire or water?", "category": "Knowledge"}
+{"question_id": 3, "point": "000.npy", "text": "Please give me several steps to divide this pile of things into 3 parts.", "category": "Embodied Interaction"}
+{"question_id": 4, "point": "000.npy", "text": "Is the thickness of the wooden board uniform?", "category": "Spatial Recognition"}
+{"question_id": 5, "point": "000.npy", "text": "As a mobile robot, how would you go about picking up the first wooden board from this stack?", "category": "Embodied Interaction"}
+{"question_id": 6, "point": "000.npy", "text": "Tell me about this object and its use in detail.", "category": "Language Generation"}
+{"question_id": 7, "point": "001.npy", "text": "Please describe this object and the time in which it lived.", "category": "General Visual Recognition"}
+{"question_id": 8, "point": "001.npy", "text": "What will be its food?", "category": "Knowledge"}
+{"question_id": 10, "point": "001.npy", "text": "Describe the object's action and predict its future action.", "category": "Knowledge"}
+{"question_id": 12, "point": "002.npy", "text": "What is it?", "category": "General Visual Recognition"}
+{"question_id": 13, "point": "002.npy", "text": "List some countries that using of this object is prohibited.", "category": "Knowledge"}
+{"question_id": 14, "point": "002.npy", "text": "Please provide a detailed description of its category and attributes.", "category": "Language Generation"}
+{"question_id": 15, "point": "002.npy", "text": "As a robot, how would you control the mechanical arm to utilize this weapon?", "category": "Embodied Interaction"}
+{"question_id": 16, "point": "003.npy", "text": "What is wearing on his body?", "category": "General Visual Recognition"}
+{"question_id": 19, "point": "003.npy", "text": "What is his face look like?", "category": "Knowledge"}
+{"question_id": 17, "point": "004.npy", "text": "What occupation could this model possibly be?", "category": "Knowledge"}
+{"question_id": 18, "point": "004.npy", "text": "What is holding in its two hands respectively?", "category": "Spatial Recognition"}
+{"question_id": 21, "point": "004.npy", "text": "Please describe the culture of Samurai in detail.", "category": "Language Generation"}
+{"question_id": 22, "point": "005.npy", "text": "At which places will this object be used?", "category": "Knowledge"}
+{"question_id": 24, "point": "005.npy", "text": "What shape is it?", "category": "Spatial Recognition"}
+{"question_id": 25, "point": "005.npy", "text": "Which number is the opposite of the number 1 on this object?", "category": "Spatial Recognition"}
+{"question_id": 29, "point": "005.npy", "text": "How many sides does this object have?", "category": "General Visual Recognition"}
+{"question_id": 30, "point": "005.npy", "text": "Please give me steps to roll this object until it hits 6.", "category": "Embodied Interaction"}
+{"question_id": 31, "point": "005.npy", "text": "Please describe this object in detail.", "category": "Language Generation"}
+{"question_id": 32, "point": "006.npy", "text": "What is this object mainly made of?", "category": "Knowledge"}
+{"question_id": 33, "point": "006.npy", "text": "Tell me more about this 3d model, such as its composition, shape, and customs.", "category": "Language Generation"}
+{"question_id": 34, "point": "006.npy", "text": "What's the difference between the two sides of it?", "category": "Spatial Recognition"}
+{"question_id": 38, "point": "006.npy", "text": "When grasping it, should you apply a greater or lesser force?", "category": "Embodied Interaction"}
+{"question_id": 35, "point": "007.npy", "text": "What is this building?", "category": "General Visual Recognition"}
+{"question_id": 36, "point": "007.npy", "text": "What kind of activities can hold in it?", "category": "Knowledge"}
+{"question_id": 37, "point": "007.npy", "text": "Which side is planted with trees?", "category": "Spatial Recognition"}
+{"question_id": 20, "point": "007.npy", "text": "You are a mobile robot. If you are currently at the front entrance of this building, please navigate to its rear side.", "category": "Embodied Interaction"}
+{"question_id": 39, "point": "008.npy", "text": "What can this object be used for?", "category": "Knowledge"}
+{"question_id": 40, "point": "008.npy", "text": "As a robot, Where should you position the robotic arm to grasp it?", "category": "Embodied Interaction"}
+{"question_id": 41, "point": "008.npy", "text": "Describe the making process of this object.", "category": "Language Generation"}
+{"question_id": 42, "point": "008.npy", "text": "Tell me the symbolic meaning of it in detail.", "category": "Language Generation"}
+{"question_id": 43, "point": "008.npy", "text": "Where is the tassel of the model?", "category": "Spatial Recognition"}
+{"question_id": 58, "point": "009.npy", "text": "Describe the subparts of this object.", "category": "General Visual Recognition"}
+{"question_id": 44, "point": "009.npy", "text": "Which city is this architecture from?", "category": "Knowledge"}
+{"question_id": 45, "point": "009.npy", "text": "Describe the shapes seen from 6 different angles of the model, from the bottom, top, left, right, front, and back.", "category": "Spatial Recognition"}
+{"question_id": 46, "point": "009.npy", "text": "Tell me its history.", "category": "Language Generation"}
+{"question_id": 47, "point": "010.npy", "text": "What are these objects commonly used to do in usual life? Please speak in detail.", "category": "Language Generation"}
+{"question_id": 48, "point": "010.npy", "text": "How many things are there in total? And what are they respectively?", "category": "General Visual Recognition"}
+{"question_id": 49, "point": "010.npy", "text": "As a robot, which item should you handle with great care to avoid harming humans?", "category": "Embodied Interaction"}
+{"question_id": 50, "point": "010.npy", "text": "Please give me several steps of feeding me a steak and soup with these objects.", "category": "Embodied Interaction"}
+{"question_id": 51, "point": "010.npy", "text": "I want to change the place of the spoon and the fork, please give me steps to finish it.", "category": "Embodied Interaction"}
+{"question_id": 52, "point": "010.npy", "text": "Which one is in the middle?", "category": "Spatial Recognition"}
+{"question_id": 53, "point": "010.npy", "text": "If I change the place of fork and knife, which one will be in the middle?", "category": "Spatial Recognition"}
+{"question_id": 54, "point": "010.npy", "text": "Which one is the longest?", "category": "Spatial Recognition"}
+{"question_id": 55, "point": "011.npy", "text": "What occupation could the model possibly be? In which place might it appear?", "category": "Knowledge"}
+{"question_id": 56, "point": "011.npy", "text": "What's its dress style?", "category": "General Visual Recognition"}
+{"question_id": 57, "point": "012.npy", "text": "Please describe this scene.", "category": "General Visual Recognition"}
+{"question_id": 60, "point": "012.npy", "text": "What liquid is most likely being poured out?", "category": "Knowledge"}
+{"question_id": 62, "point": "012.npy", "text": "Which side did the liquid spill outside of the bowl?", "category": "Spatial Recognition"}
+{"question_id": 64, "point": "012.npy", "text": "As an AI robot, how to complete the action being performed in this scene step by step?", "category": "Embodied Interaction"}
+{"question_id": 65, "point": "013.npy", "text": "What is its emotion right now?", "category": "General Visual Recognition"}
+{"question_id": 66, "point": "013.npy", "text": "As an AI assistant, please give me steps to put it on a leash.", "category": "Embodied Interaction"}
+{"question_id": 67, "point": "013.npy", "text": "Please describe the difference between it and dogs.", "category": "Language Generation"}
+{"question_id": 68, "point": "013.npy", "text": "Is it in a realistic style or an animated style?", "category": "Knowledge"}
+{"question_id": 70, "point": "014.npy", "text": "What's this women's occupation?", "category": "Knowledge"}
+{"question_id": 72, "point": "014.npy", "text": "What's her action now?", "category": "General Visual Recognition"}
+{"question_id": 73, "point": "014.npy", "text": "What clothes are the object wearing and what colors are they?", "category": "General Visual Recognition"}
+{"question_id": 75, "point": "014.npy", "text": "What do you know about surgery?", "category": "Language Generation"}
+{"question_id": 77, "point": "015.npy", "text": "Does this model have a left hand or a right hand?", "category": "Spatial Recognition"}
+{"question_id": 78, "point": "015.npy", "text": "Please describe this object.", "category": "General Visual Recognition"}
+{"question_id": 79, "point": "015.npy", "text": "What is on its head?", "category": "General Visual Recognition"}
+{"question_id": 80, "point": "015.npy", "text": "What will happen if the temperature goes up or it is set near flame?", "category": "Knowledge"}
+{"question_id": 81, "point": "015.npy", "text": "How to build this thing in several steps?", "category": "Embodied Interaction"}
+{"question_id": 83, "point": "016.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 84, "point": "016.npy", "text": "What color is the handle of this object?", "category": "General Visual Recognition"}
+{"question_id": 85, "point": "016.npy", "text": "Does the item include handle for gripping?", "category": "Embodied Interaction"}
+{"question_id": 86, "point": "017.npy", "text": "As a robot, how can you efficiently lift this object by your mechanical arms?", "category": "Embodied Interaction"}
+{"question_id": 87, "point": "017.npy", "text": "What kind of material is this object made of?", "category": "General Visual Recognition"}
+{"question_id": 88, "point": "017.npy", "text": "What can this object be used to do?", "category": "Knowledge"}
+{"question_id": 89, "point": "017.npy", "text": "How can a robot invert this object from the ground in steps? That is, with the top facing downward and the bottom facing upward.", "category": "Embodied Interaction"}
+{"question_id": 90, "point": "017.npy", "text": "Are there any components in this bucket that can be operated by a robot?", "category": "Embodied Interaction"}
+{"question_id": 91, "point": "018.npy", "text": "What is the relationship between it and human?", "category": "Knowledge"}
+{"question_id": 92, "point": "018.npy", "text": "Please describe this creature in detail.", "category": "Language Generation"}
+{"question_id": 93, "point": "018.npy", "text": "My cat is out of the cage, give me steps to put it in.", "category": "Embodied Interaction"}
+{"question_id": 94, "point": "019.npy", "text": "What parts of its body are black?", "category": "Spatial Recognition"}
+{"question_id": 95, "point": "019.npy", "text": "Please describe its place in nature and society in detail.", "category": "Language Generation"}
+{"question_id": 96, "point": "020.npy", "text": "Which hand is she wearing glove on?", "category": "Spatial Recognition"}
+{"question_id": 97, "point": "020.npy", "text": "What holiday is her outfit associated with?", "category": "Knowledge"}
+{"question_id": 98, "point": "020.npy", "text": "Where is the bowknot?", "category": "Spatial Recognition"}
+{"question_id": 99, "point": "021.npy", "text": "How many barrels are there?", "category": "General Visual Recognition"}
+{"question_id": 101, "point": "021.npy", "text": "Please describe the spatial relation of this entirety in detail.", "category": "Spatial Recognition"}
+{"question_id": 102, "point": "021.npy", "text": "Is the rusty barrel perfectly round?", "category": "Spatial Recognition"}
+{"question_id": 104, "point": "021.npy", "text": "What is the number of yellow objects multiplied by the number of rusty objects?", "category": "Knowledge"}
+{"question_id": 105, "point": "021.npy", "text": "Give me several steps to take the rusty one on the ground.", "category": "Embodied Interaction"}
+{"question_id": 108, "point": "021.npy", "text": "Please provide a detailed explanation of the symbols on the barrel.", "category": "Language Generation"}
+{"question_id": 110, "point": "022.npy", "text": "What's its gender?", "category": "General Visual Recognition"}
+{"question_id": 111, "point": "022.npy", "text": "Which side of this 3d object is hidden by its clothes? Front or back?", "category": "Spatial Recognition"}
+{"question_id": 112, "point": "022.npy", "text": "Where is its cloak?", "category": "Spatial Recognition"}
+{"question_id": 113, "point": "022.npy", "text": "Does he have any hair?", "category": "General Visual Recognition"}
+{"question_id": 114, "point": "023.npy", "text": "What's the difference between its ear and those of a regular human?", "category": "Knowledge"}
+{"question_id": 115, "point": "023.npy", "text": "What will happen next?", "category": "Knowledge"}
+{"question_id": 116, "point": "023.npy", "text": "What is she doing now?", "category": "General Visual Recognition"}
+{"question_id": 117, "point": "023.npy", "text": "Please give me some manipulatable steps of the process of bow shooting.", "category": "Embodied Interaction"}
+{"question_id": 118, "point": "023.npy", "text": "Please describe some films that contain characters like this 3D model.", "category": "Language Generation"}
+{"question_id": 120, "point": "023.npy", "text": "Where is the bow?", "category": "Spatial Recognition"}
+{"question_id": 121, "point": "023.npy", "text": "What do you know about the elf?", "category": "Language Generation"}
+{"question_id": 122, "point": "024.npy", "text": "In which place can this object be seen?", "category": "Knowledge"}
+{"question_id": 123, "point": "024.npy", "text": "What can this object do?", "category": "Knowledge"}
+{"question_id": 124, "point": "024.npy", "text": "How many road signs are there in total?", "category": "General Visual Recognition"}
+{"question_id": 126, "point": "024.npy", "text": "As a robot, if you want to drive the car to the right, which road sign should you look at?", "category": "Embodied Interaction"}
+{"question_id": 128, "point": "025.npy", "text": "What color are the petals?", "category": "General Visual Recognition"}
+{"question_id": 130, "point": "025.npy", "text": "On which occasions do people give this object?", "category": "Knowledge"}
+{"question_id": 131, "point": "025.npy", "text": "Please give me several manipulatable steps to insert this thing into a vase.", "category": "Embodied Interaction"}
+{"question_id": 132, "point": "025.npy", "text": "Compose a beautiful poem to describe this object.", "category": "Language Generation"}
+{"question_id": 133, "point": "025.npy", "text": "If a robot wants to grasp this object, which part should it grab?", "category": "Embodied Interaction"}
+{"question_id": 134, "point": "026.npy", "text": "What items are included in this scene?", "category": "General Visual Recognition"}
+{"question_id": 135, "point": "026.npy", "text": "Imagine you are a robot sitting on the couch, and I'm taking a bath in the tub. Please navigate to the bathtub and on your way, pick up the shampoo from the sink and hand it to me.", "category": "Embodied Interaction"}
+{"question_id": 137, "point": "026.npy", "text": "How many doors are there beneath the sink cabinet?", "category": "General Visual Recognition"}
+{"question_id": 139, "point": "026.npy", "text": "Is the sofa on the carpet?", "category": "Spatial Recognition"}
+{"question_id": 140, "point": "026.npy", "text": "Where is the bathtub?", "category": "Spatial Recognition"}
+{"question_id": 141, "point": "027.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 142, "point": "027.npy", "text": "In which Festival may this object be used?", "category": "Knowledge"}
+{"question_id": 143, "point": "027.npy", "text": "Describe this vegetable in detail.", "category": "Language Generation"}
+{"question_id": 146, "point": "027.npy", "text": "As a robot, should you exert greater force or lesser force when picking up this item?", "category": "Embodied Interaction"}
+{"question_id": 144, "point": "028.npy", "text": "What is this?", "category": "General Visual Recognition"}
+{"question_id": 145, "point": "028.npy", "text": "How many sushi are there in total?", "category": "General Visual Recognition"}
+{"question_id": 147, "point": "028.npy", "text": "How many sushi will there be if 2 more sushi are added?", "category": "Knowledge"}
+{"question_id": 150, "point": "028.npy", "text": "What color is the wasabi in the dish?", "category": "General Visual Recognition"}
+{"question_id": 151, "point": "028.npy", "text": "What country does this type of food originate from?", "category": "Knowledge"}
+{"question_id": 153, "point": "028.npy", "text": "What's on the side of the sushi and dip dishes?", "category": "Spatial Recognition"}
+{"question_id": 154, "point": "028.npy", "text": "Give me steps to feed me eat this dish.", "category": "Embodied Interaction"}
+{"question_id": 155, "point": "028.npy", "text": "Which sushi is closer to the chopsticks, The white sushi or the black sushi?", "category": "Spatial Recognition"}
+{"question_id": 158, "point": "028.npy", "text": "As an embodied AI robot, please give me steps to clean the dishes.", "category": "Embodied Interaction"}
+{"question_id": 159, "point": "028.npy", "text": "Describe its cuisine culture in detail.", "category": "Language Generation"}
+{"question_id": 161, "point": "029.npy", "text": "Please describe this object.", "category": "General Visual Recognition"}
+{"question_id": 162, "point": "029.npy", "text": "Where does she place her hands?", "category": "Spatial Recognition"}
+{"question_id": 163, "point": "029.npy", "text": "Describe this object's action right now.", "category": "General Visual Recognition"}
+{"question_id": 164, "point": "030.npy", "text": "What creature might it be?", "category": "General Visual Recognition"}
+{"question_id": 165, "point": "030.npy", "text": "What is the 3d model doing?", "category": "General Visual Recognition"}
+{"question_id": 168, "point": "030.npy", "text": "Describe the classic character of this creature.", "category": "Language Generation"}
+{"question_id": 169, "point": "031.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 170, "point": "031.npy", "text": "Please describe how important it is to a country.", "category": "Language Generation"}
+{"question_id": 171, "point": "032.npy", "text": "Does this object live in groups or alone in nature?", "category": "Knowledge"}
+{"question_id": 172, "point": "032.npy", "text": "Please describe this creature in detail.", "category": "Language Generation"}
+{"question_id": 173, "point": "032.npy", "text": "What is queen ant? Tell me in detail.", "category": "Language Generation"}
+{"question_id": 174, "point": "033.npy", "text": "What can people do using this object?", "category": "Knowledge"}
+{"question_id": 175, "point": "033.npy", "text": "What kind of material are this object often made of?", "category": "Knowledge"}
+{"question_id": 176, "point": "033.npy", "text": "What will happen if it is hit by something hard?", "category": "Knowledge"}
+{"question_id": 177, "point": "033.npy", "text": "Is its drainage outlet on the left or right side?", "category": "Spatial Recognition"}
+{"question_id": 178, "point": "033.npy", "text": "What color is this object?", "category": "General Visual Recognition"}
+{"question_id": 179, "point": "033.npy", "text": "Please give me steps to clean it.", "category": "Embodied Interaction"}
+{"question_id": 181, "point": "034.npy", "text": "What is it?", "category": "General Visual Recognition"}
+{"question_id": 182, "point": "034.npy", "text": "Describe this scene in detail.", "category": "Language Generation"}
+{"question_id": 183, "point": "034.npy", "text": "What's between the main house and the side house?", "category": "Spatial Recognition"}
+{"question_id": 184, "point": "034.npy", "text": "What can this object be used to do?", "category": "Knowledge"}
+{"question_id": 185, "point": "035.npy", "text": "Who is this anime character?", "category": "General Visual Recognition"}
+{"question_id": 186, "point": "035.npy", "text": "This is an anime character. Could you please provide an introduction to this animated series?", "category": "Language Generation"}
+{"question_id": 187, "point": "035.npy", "text": "Tell me about his best friend in the anime in detail.", "category": "Language Generation"}
+{"question_id": 188, "point": "035.npy", "text": "What is his expression?", "category": "General Visual Recognition"}
+{"question_id": 189, "point": "035.npy", "text": "Why does his face have holes?", "category": "Knowledge"}
+{"question_id": 190, "point": "036.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 191, "point": "036.npy", "text": "What is the difference between this model and the guitar?", "category": "Language Generation"}
+{"question_id": 192, "point": "036.npy", "text": "What materials are often used to produce this object?", "category": "Knowledge"}
+{"question_id": 193, "point": "037.npy", "text": "How many knobs does it have? What are their respective functions?", "category": "Knowledge"}
+{"question_id": 194, "point": "037.npy", "text": "What can this thing do?", "category": "Knowledge"}
+{"question_id": 195, "point": "037.npy", "text": "Does it contain any manipulatable components?", "category": "Embodied Interaction"}
+{"question_id": 196, "point": "037.npy", "text": "What are the physical properties of it?", "category": "Knowledge"}
+{"question_id": 197, "point": "037.npy", "text": "Give me some steps to use this thing to get a basin of water.", "category": "Embodied Interaction"}
+{"question_id": 199, "point": "038.npy", "text": "What is this? Can this model fly?", "category": "Knowledge"}
+{"question_id": 201, "point": "038.npy", "text": "Describe western dragon in detail.", "category": "Language Generation"}
+{"question_id": 202, "point": "039.npy", "text": "In which place will this object show up?", "category": "Knowledge"}
+{"question_id": 203, "point": "039.npy", "text": "What can people use this object to do?", "category": "Knowledge"}
+{"question_id": 204, "point": "039.npy", "text": "What is on its right side?", "category": "Spatial Recognition"}
+{"question_id": 205, "point": "039.npy", "text": "Please give me several manipulatable steps to use this object to make a turkey.", "category": "Embodied Interaction"}
+{"question_id": 206, "point": "039.npy", "text": "Are there any interactive components here?", "category": "Embodied Interaction"}
+{"question_id": 207, "point": "040.npy", "text": "How many slices are there?", "category": "General Visual Recognition"}
+{"question_id": 211, "point": "040.npy", "text": "As a robot, how to cut this object to slices in manipulatable steps?", "category": "Embodied Interaction"}
+{"question_id": 212, "point": "041.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 214, "point": "041.npy", "text": "As a robot, which finger should you use to flip the switch when you grab hold of it?", "category": "Embodied Interaction"}
+{"question_id": 215, "point": "041.npy", "text": "What shape is the handle?", "category": "Spatial Recognition"}
+{"question_id": 216, "point": "041.npy", "text": "Which one is closer to the bulb, the switch or the handle?", "category": "Spatial Recognition"}
+{"question_id": 218, "point": "042.npy", "text": "What is this thing?", "category": "General Visual Recognition"}
+{"question_id": 219, "point": "042.npy", "text": "How does it affect human life?", "category": "Knowledge"}
+{"question_id": 220, "point": "042.npy", "text": "Describe this creature in detail.", "category": "Language Generation"}
+{"question_id": 221, "point": "043.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 222, "point": "043.npy", "text": "Please describe this object in detail.", "category": "Language Generation"}
+{"question_id": 223, "point": "043.npy", "text": "What is the sheath of this object made of?", "category": "Knowledge"}
+{"question_id": 225, "point": "043.npy", "text": "Give me some steps to clean its blade.", "category": "Embodied Interaction"}
+{"question_id": 226, "point": "044.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 229, "point": "044.npy", "text": "What parts are there this object consist of?", "category": "General Visual Recognition"}
+{"question_id": 230, "point": "044.npy", "text": "Please give me several steps to weighing 2 things and sort them by the weights.", "category": "Embodied Interaction"}
+{"question_id": 231, "point": "044.npy", "text": "What is on the top of this object?", "category": "Spatial Recognition"}
+{"question_id": 232, "point": "044.npy", "text": "What is the front part of this object?", "category": "Spatial Recognition"}
+{"question_id": 234, "point": "045.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 235, "point": "045.npy", "text": "Please tell some countries that have ancient buildings like this object.", "category": "Language Generation"}
+{"question_id": 236, "point": "045.npy", "text": "How many pillars is this 3d model made up of?", "category": "General Visual Recognition"}
+{"question_id": 239, "point": "046.npy", "text": "Please describe this 3d model's wearing.", "category": "General Visual Recognition"}
+{"question_id": 240, "point": "046.npy", "text": "Where might she be working?", "category": "Knowledge"}
+{"question_id": 241, "point": "047.npy", "text": "How many different colors does it primarily have?", "category": "General Visual Recognition"}
+{"question_id": 242, "point": "047.npy", "text": "How many layers of drawers does this model have?", "category": "General Visual Recognition"}
+{"question_id": 243, "point": "047.npy", "text": "You are a robot. I can't find my document, can you help me find it in this obejct?", "category": "Embodied Interaction"}
+{"question_id": 244, "point": "048.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 245, "point": "048.npy", "text": "In which occasion might this thing show off?", "category": "Knowledge"}
+{"question_id": 246, "point": "048.npy", "text": "Where is the label?", "category": "Spatial Recognition"}
+{"question_id": 247, "point": "048.npy", "text": "Are there any interactive components here?", "category": "Embodied Interaction"}
+{"question_id": 249, "point": "048.npy", "text": "Offer me some information about gamble.", "category": "Language Generation"}
+{"question_id": 250, "point": "049.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 251, "point": "049.npy", "text": "Where might this object potentially to be used?", "category": "Knowledge"}
+{"question_id": 252, "point": "049.npy", "text": "How many iron frames does The model have for support?", "category": "Spatial Recognition"}
+{"question_id": 253, "point": "050.npy", "text": "How many steps are there on this model?", "category": "General Visual Recognition"}
+{"question_id": 254, "point": "050.npy", "text": "What can people use this to do?", "category": "Knowledge"}
+{"question_id": 255, "point": "051.npy", "text": "How many chairs are there in the scene?", "category": "General Visual Recognition"}
+{"question_id": 256, "point": "051.npy", "text": "What is on the top of it?", "category": "Spatial Recognition"}
+{"question_id": 257, "point": "051.npy", "text": "Are all the chairs completely placed under the table?", "category": "Spatial Recognition"}
+{"question_id": 258, "point": "051.npy", "text": "What is next to the basket on the table?", "category": "Spatial Recognition"}
+{"question_id": 259, "point": "051.npy", "text": "As you are an embodied AI assistant, please give me steps to move the chairs to the same side of the table.", "category": "Embodied Interaction"}
+{"question_id": 262, "point": "052.npy", "text": "What can this object be used to do?", "category": "Knowledge"}
+{"question_id": 263, "point": "052.npy", "text": "Please give me steps to use this 3d model to drive the nail into the wall.", "category": "Embodied Interaction"}
+{"question_id": 264, "point": "052.npy", "text": "Please describe how people started to use this object in detail.", "category": "Language Generation"}
+{"question_id": 265, "point": "053.npy", "text": "In which animation does this object appear?", "category": "Knowledge"}
+{"question_id": 267, "point": "053.npy", "text": "Please describe this animation in detail.", "category": "Language Generation"}
+{"question_id": 268, "point": "053.npy", "text": "Which side is more likely to be the front of this object?", "category": "Spatial Recognition"}
+{"question_id": 271, "point": "054.npy", "text": "Describe this scene.", "category": "General Visual Recognition"}
+{"question_id": 272, "point": "054.npy", "text": "What's the print on the cup? What's meaning of it?", "category": "Knowledge"}
+{"question_id": 274, "point": "054.npy", "text": "How to melt the chocolate into this cup of coffee in steps?", "category": "Embodied Interaction"}
+{"question_id": 275, "point": "054.npy", "text": "Provide a detailed explanation of the benefits of drinking it.", "category": "Language Generation"}
+{"question_id": 277, "point": "055.npy", "text": "What does the presence of black spots on its surface indicate?", "category": "Knowledge"}
+{"question_id": 278, "point": "055.npy", "text": "Please describe the taste and texture of this thing.", "category": "Language Generation"}
+{"question_id": 280, "point": "055.npy", "text": "As you are an embodied AI assistant, please give me steps to feed me this object.", "category": "Embodied Interaction"}
+{"question_id": 282, "point": "056.npy", "text": "What is this object?", "category": "General Visual Recognition"}
+{"question_id": 283, "point": "056.npy", "text": "Which anime relates more to this object, \"Detective Conan\" or \"One Piece\"?", "category": "Knowledge"}
+{"question_id": 284, "point": "056.npy", "text": "Does it include any handles convenient for a robot to grip?", "category": "Embodied Interaction"}
+{"question_id": 286, "point": "057.npy", "text": "Where is the bow?", "category": "Spatial Recognition"}
+{"question_id": 287, "point": "057.npy", "text": "Describe its dress style.", "category": "General Visual Recognition"}
+{"question_id": 292, "point": "058.npy", "text": "As a household robot, where do you need tidying up?", "category": "Embodied Interaction"}
+{"question_id": 294, "point": "058.npy", "text": "What room is it most likely to appear in?", "category": "Knowledge"}
+{"question_id": 295, "point": "058.npy", "text": "Please describe the scene.", "category": "General Visual Recognition"}

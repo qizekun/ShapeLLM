@@ -1,0 +1,4 @@
+NAME: Hybrid
+DATA_PATH: ReConV2/data/HybridDatasets
+IMG_PATH: ReConV2/data/HybridDatasets/depth
+ratio: 1.0

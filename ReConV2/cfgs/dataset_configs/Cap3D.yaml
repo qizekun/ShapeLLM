@@ -1,0 +1,7 @@
+NAME: Cap3D
+DATA_PATH: ReConV2/data/Cap3D
+PC_PATH: ReConV2/data/Cap3D/Cap3D_pcs_pt
+IMG_PATH: ReConV2/data/Cap3D/RenderedImage
+TEXT_PATH: ReConV2/data/Cap3D/Cap3D_automated_Objaverse.csv
+ratio: 1.0
+USE_COLOR: TRUE

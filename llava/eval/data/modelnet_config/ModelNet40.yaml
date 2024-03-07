@@ -1,0 +1,8 @@
+NAME: ModelNet
+DATA_PATH: playground/data/eval/modelnet40
+NUM_CATEGORY: 40
+USE_NORMALS: FALSE
+npoints: 8192
+random_sampling: TRUE
+use_height: FALSE
+use_normals: FALSE

@@ -1,0 +1,232 @@
+{"question_id": 0, "point": "000.npy", "text": "There are 4 support bars in total.", "category": "General Visual Recognition"}
+{"question_id": 1, "point": "000.npy", "text": "Fire will cause greater damage to these wood boards than water.", "category": "Knowledge"}
+{"question_id": 3, "point": "000.npy", "text": "Step 1: Pick up the first 1/3 parts of the boards and put them down. Step 2: Pick up the other 1/3 parts of the boards and put them down to another place. Step 3: Pick up the last 1/3 parts of the boards and put it down in another place.", "category": "Embodied Interaction"}
+{"question_id": 4, "point": "000.npy", "text": "No, it's not evenly distributed.", "category": "Spatial Recognition"}
+{"question_id": 5, "point": "000.npy", "text": "Due to the thinness of the wooden board, I should press my fingers on both sides of the first layer of the board with both hands and lift it with force. Alternatively, I could gently push out the first layer of the board and then lift it up.", "category": "Embodied Interaction"}
+{"question_id": 6, "point": "000.npy", "text": "They are boards. Board is a flat, slender, rectangular piece of wood. Plank is mainly used in ship construction, housing, Bridges, and other fields. It is also used for shelves and tables.", "category": "Language Generation"}
+{"question_id": 7, "point": "001.npy", "text": "This is a dinosaur, specifically a Tyrannosaurus rex, which was lived in the Late Cretaceous period, around 68-66 million years ago.", "category": "General Visual Recognition"}
+{"question_id": 8, "point": "001.npy", "text": "The food sources of dinosaurs depended largely on their species. Herbivorous dinosaurs primarily fed on plants, such as ferns, leaves, and plant stems. Carnivorous dinosaurs ate other animals, including small mammals, fish, and other dinosaurs.", "category": "Knowledge"}
+{"question_id": 10, "point": "001.npy", "text": "It leans forward, as if to sprint or run, possibly to start hunting.", "category": "Knowledge"}
+{"question_id": 12, "point": "002.npy", "text": "This is a black handgun, along with a spare magazine.", "category": "General Visual Recognition"}
+{"question_id": 13, "point": "002.npy", "text": "China, Japan, South Korea, Austria, Belgium, Czech Republic, Greece, Hungary, Ireland, Luxembourg, Poland, Portugal, Slovakia, Spain, Sweden, etc. Using of pistols are prohibited in these countries.", "category": "Knowledge"}
+{"question_id": 14, "point": "002.npy", "text": "This is a pistol, a small short-barreled light weapon that can be fired with a single hand grip. It is mostly used in close combat and self-defense, and the penetration and stopping effect of the pistol are much lower than that of the rifle round.", "category": "Language Generation"}
+{"question_id": 15, "point": "002.npy", "text": "Position the pistol, grasp the grip with either the left or right hand, aim according to the sights, and pull the trigger with the index finger to fire.", "category": "Embodied Interaction"}
+{"question_id": 16, "point": "003.npy", "text": "He is wearing a pair of yellow shorts and some jewelry.", "category": "General Visual Recognition"}
+{"question_id": 19, "point": "003.npy", "text": "His has long nose and big ear, like an elephant.", "category": "Knowledge"}
+{"question_id": 17, "point": "004.npy", "text": "He might be a knight, samurai or ninja.", "category": "Knowledge"}
+{"question_id": 18, "point": "004.npy", "text": "He held a sword in his left hand, and his right hand was empty.", "category": "Spatial Recognition"}
+{"question_id": 21, "point": "004.npy", "text": "Samurai culture, rooted in feudal Japan, embodies honor, loyalty, and martial prowess. Samurai adhere to Bushido, the \"Way of the Warrior,\" emphasizing virtues like courage, integrity, and self-discipline. They serve their lord with unwavering loyalty, uphold honor through duels, and prioritize self-improvement through rigorous training and meditation.", "category": "Language Generation"}
+{"question_id": 22, "point": "005.npy", "text": "This object is a dice, so it might be used at game places like bars and gambling houses.", "category": "Knowledge"}
+{"question_id": 24, "point": "005.npy", "text": "This is a cube.", "category": "Spatial Recognition"}
+{"question_id": 25, "point": "005.npy", "text": "It is number 6 that on the opposite of the number 1 on this object.", "category": "Spatial Recognition"}
+{"question_id": 29, "point": "005.npy", "text": "This object has 6 sides.", "category": "General Visual Recognition"}
+{"question_id": 30, "point": "005.npy", "text": "Step 1: Roll the dice. Step 2: If the dice hits 1, 2, 3, 4, or 5, roll it again. Step 3: If the dice hits 6, stop rolling and show the roll of the dice.", "category": "Embodied Interaction"}
+{"question_id": 31, "point": "005.npy", "text": "This is dice, small throwable props with marks on each side to generate random numbers, are ancient gambling devices. Dice are commonly used in table games, such as dice games, board games, role-playing games, game games, etc. The most common die is a 6-sided die, which is a regular cube with 1 to 6 holes (or numbers) on each side, and the sum of the numbers on the opposite sides must be 7.", "category": "Language Generation"}
+{"question_id": 32, "point": "006.npy", "text": "This is a doughnut, which is mainly made of dough, sugar and cream.", "category": "Knowledge"}
+{"question_id": 33, "point": "006.npy", "text": "A doughnut is a kind of sweet food that is mixed with flour, granulated sugar, cream, eggs, and fried. The two most common shapes are hollow rings and closed doughnuts with sweet fillings such as cream and custard in the middle of the dough. In the United States, many people eat doughnuts as a breakfast staple, and there are doughnut days. In Asia, doughnuts are mainly eaten as a snack.", "category": "Language Generation"}
+{"question_id": 34, "point": "006.npy", "text": "The top of the doughnut is pink and covered with syrup and icing sugar, and the bottom is brown and just bread.", "category": "Spatial Recognition"}
+{"question_id": 38, "point": "006.npy", "text": "A lesser force.", "category": "Embodied Interaction"}
+{"question_id": 35, "point": "007.npy", "text": "It's a gym.", "category": "General Visual Recognition"}
+{"question_id": 36, "point": "007.npy", "text": "Major events such as sports games or concerts can be held in this place.", "category": "Knowledge"}
+{"question_id": 37, "point": "007.npy", "text": "Trees are planted on the side near the main entrance.", "category": "Spatial Recognition"}
+{"question_id": 20, "point": "007.npy", "text": "Move left or right along the building until you reach the rear of the gym.", "category": "Embodied Interaction"}
+{"question_id": 39, "point": "008.npy", "text": "This object can be used as decoration, to show a festive atmosphere.", "category": "Knowledge"}
+{"question_id": 40, "point": "008.npy", "text": "The top of the lantern.", "category": "Embodied Interaction"}
+{"question_id": 41, "point": "008.npy", "text": "The making of Chinese lanterns involves crafting a bamboo frame and covering it with thin, colorful paper. Intricate designs are cut into the paper, creating patterns and images. A candle or bulb is placed inside, illuminating the lantern. Traditional techniques passed down through generations ensure craftsmanship and cultural significance.", "category": "Language Generation"}
+{"question_id": 42, "point": "008.npy", "text": "The Chinese lantern symbolizes illumination, enlightenment, and hope. Its radiant glow represents the pursuit of knowledge, wisdom, and guidance in life's journey. As a cultural emblem, it embodies joy, prosperity, and good fortune, illuminating paths both literal and metaphorical, guiding souls towards their aspirations and dreams.", "category": "Language Generation"}
+{"question_id": 43, "point": "008.npy", "text": "The tassel of the lantern is hanging on the bottom.", "category": "Spatial Recognition"}
+{"question_id": 58, "point": "009.npy", "text": "The object consists of two towers and a bridge connecting them.", "category": "General Visual Recognition"}
+{"question_id": 44, "point": "009.npy", "text": "Kuala Lumpur.", "category": "Knowledge"}
+{"question_id": 45, "point": "009.npy", "text": "From front and back what you can see will be two towers on a foundation, connecting by a bridge. From the bottom, you can only see the foundation. From the top, there will be the spires of two towers, as well as the bridge, and from left and right you will see only one tower on the foundation.", "category": "Spatial Recognition"}
+{"question_id": 46, "point": "009.npy", "text": "Petronas Twin Towers, completed in 1998, were once the world's tallest buildings at 452 meters. Designed by Cesar Pelli, they symbolize Malaysia's economic growth and feature Islamic motifs. Constructed by the Malaysian oil company Petronas, the towers are iconic landmarks in Kuala Lumpur, renowned for their sleek design and engineering marvel.", "category": "Language Generation"}
+{"question_id": 47, "point": "010.npy", "text": "Forks, spoons, and table knives are common eating utensils used in everyday life for various purposes. Forks are primarily used for piercing and picking up solid food item. Spoons are used for scooping and conveying liquids, semi-liquids, and foods with a sauce or broth. Table knives, also known as dinner knives, are used for cutting and slicing food on your plate. They are typically not as sharp as kitchen knives, as their primary purpose is to assist with cutting while dining.", "category": "Language Generation"}
+{"question_id": 48, "point": "010.npy", "text": "There are 3 things in total. A fork, a spoon, and a table knife.", "category": "General Visual Recognition"}
+{"question_id": 49, "point": "010.npy", "text": "The item on the far left, the knife.", "category": "Embodied Interaction"}
+{"question_id": 50, "point": "010.npy", "text": "Step 1: Cut the steak with the knife. Step 2: Pick up the cut steak with the fork. Step 3: Feed the steak on the fork in your mouth. Step 4: Spoon the soup. Step 5: Feed the soup in the spoon in your mouth.", "category": "Embodied Interaction"}
+{"question_id": 51, "point": "010.npy", "text": "Step 1: Pick up the fork and the spoon. Step 2: Put down the spoon at the place of the fork. Step 3: Put down the fork at the place of the spoon.", "category": "Embodied Interaction"}
+{"question_id": 52, "point": "010.npy", "text": "Spoon is in the middle.", "category": "Spatial Recognition"}
+{"question_id": 53, "point": "010.npy", "text": "If changing the place of fork and knife, the spoon will still be in the middle.", "category": "Spatial Recognition"}
+{"question_id": 54, "point": "010.npy", "text": "The left one, knife, is the longest.", "category": "Spatial Recognition"}
+{"question_id": 55, "point": "011.npy", "text": "He could probably be a soldier. It could be on the battlefield or in the army.", "category": "Knowledge"}
+{"question_id": 56, "point": "011.npy", "text": "He was wearing a camouflage style multifunctional military uniform.", "category": "General Visual Recognition"}
+{"question_id": 57, "point": "012.npy", "text": "A jug of milk and a box of cookies poured into the bowl and mixed together.", "category": "General Visual Recognition"}
+{"question_id": 60, "point": "012.npy", "text": "Milk.", "category": "Knowledge"}
+{"question_id": 62, "point": "012.npy", "text": "Right side.", "category": "Spatial Recognition"}
+{"question_id": 64, "point": "012.npy", "text": "Step 1: Pour the milk into the bowl. Step 2: Put the cookies into the bowl. Step 3: Stir with a spoon.", "category": "Embodied Interaction"}
+{"question_id": 65, "point": "013.npy", "text": "It's quite happy with a laughing face.", "category": "General Visual Recognition"}
+{"question_id": 66, "point": "013.npy", "text": "Step 1: Pick out the leash. Step 2: Put the leash cross the dog's neck and back. Step 3: Tight the leash.", "category": "Embodied Interaction"}
+{"question_id": 67, "point": "013.npy", "text": "Cats are independent, aloof creatures, often preferring solitude and minimal interaction. They groom themselves meticulously and typically exhibit more reserved behaviors. Dogs are loyal, social animals, craving companionship and human interaction. They thrive on affection and require regular exercise and attention to maintain their well-being.", "category": "Language Generation"}
+{"question_id": 68, "point": "013.npy", "text": "Animated style.", "category": "Knowledge"}
+{"question_id": 70, "point": "014.npy", "text": "She is a medical worker.", "category": "Knowledge"}
+{"question_id": 72, "point": "014.npy", "text": "She is standing with two hands raised on both sides.", "category": "General Visual Recognition"}
+{"question_id": 73, "point": "014.npy", "text": "She is wearing protective clothing and two medical gloves. The protective clothing is blue while the medical gloves are green.", "category": "General Visual Recognition"}
+{"question_id": 75, "point": "014.npy", "text": "Surgery is a subject of modern medicine that deals with the use of surgery to treat patients. Surgery, referred to as surgery, refers to the process of entering the human body or other biological tissues through instruments, under the operation of surgeons or other professionals, to eliminate lesions, change structures or implant foreign objects by external means.", "category": "Language Generation"}
+{"question_id": 77, "point": "015.npy", "text": "Right hand.", "category": "Spatial Recognition"}
+{"question_id": 78, "point": "015.npy", "text": "This is a snowman with a hat on his head.", "category": "General Visual Recognition"}
+{"question_id": 79, "point": "015.npy", "text": "It's a black bowler hat.", "category": "General Visual Recognition"}
+{"question_id": 80, "point": "015.npy", "text": "This object is made of snow, so while temperature goes up or it is set near flame, it might melt into water.", "category": "Knowledge"}
+{"question_id": 81, "point": "015.npy", "text": "Step 1: Roll a large and a small snowball. Step 2: Stack the small snowball on the large snowball. Step 3: Stick a branch in the middle of the snowball as a right hand. Step 4: Put an expression on the snowman. Step 5: Put a hat on the snowman.", "category": "Embodied Interaction"}
+{"question_id": 83, "point": "016.npy", "text": "This is an ice scraper.", "category": "General Visual Recognition"}
+{"question_id": 84, "point": "016.npy", "text": "It's Blue with white stripes.", "category": "General Visual Recognition"}
+{"question_id": 85, "point": "016.npy", "text": "Yes.", "category": "Embodied Interaction"}
+{"question_id": 86, "point": "017.npy", "text": "For such large bucket, the mechanical arms can be wrapped around it and lifted with force.", "category": "Embodied Interaction"}
+{"question_id": 87, "point": "017.npy", "text": "It's made of metal.", "category": "General Visual Recognition"}
+{"question_id": 88, "point": "017.npy", "text": "This object can be used to store things like oil, water and so on.", "category": "Knowledge"}
+{"question_id": 89, "point": "017.npy", "text": "Step 1: Raise the bucket from ground. Step 2: Flip it 180 degrees, make its top parallel to the ground. Step 3: Place the bucket steadily on the ground.", "category": "Embodied Interaction"}
+{"question_id": 90, "point": "017.npy", "text": "The top of this bucket has a lid.", "category": "Embodied Interaction"}
+{"question_id": 91, "point": "018.npy", "text": "It's a cat, who can be a domestic pet of the human.", "category": "Knowledge"}
+{"question_id": 92, "point": "018.npy", "text": "The cat, a small carnivorous mammal, is beloved for its independent nature, soft fur, and graceful movements. With retractable claws, keen senses, and a flexible body, it prowls silently, hunting rodents and insects. Cats communicate through meows, purrs, and body language, forming strong bonds with their human companions.", "category": "Language Generation"}
+{"question_id": 93, "point": "018.npy", "text": "Step 1: Open the cage. Step 2: Catch the cat. Step 3: Put the cat into the cage and lock it.", "category": "Embodied Interaction"}
+{"question_id": 94, "point": "019.npy", "text": "Its ears, limbs, and the area on the back near the neck is black.", "category": "Spatial Recognition"}
+{"question_id": 95, "point": "019.npy", "text": "The panda is a kind of mammal belonging to the carnivorous order Ursidae, and its body color is black and white. The panda is a unique species in China and is regarded as a living fossil in the biological world. The panda's black and white appearance makes it popular with people and has a large number of fans around the world. Pandas are also important representatives of China to show friendship to each other in diplomatic activities.", "category": "Language Generation"}
+{"question_id": 96, "point": "020.npy", "text": "Left hand.", "category": "Spatial Recognition"}
+{"question_id": 97, "point": "020.npy", "text": "Christmas Day.", "category": "Knowledge"}
+{"question_id": 98, "point": "020.npy", "text": "The bowknot is behind her head.", "category": "Spatial Recognition"}
+{"question_id": 99, "point": "021.npy", "text": "There are 5 barrels in total.", "category": "General Visual Recognition"}
+{"question_id": 101, "point": "021.npy", "text": "The barrels are stacked in two layers, the bottom layer is three yellow barrels, and the top layer is a yellow barrel and a rusted barrel in the gap between the bottom three buckets. The whole buckets look like a triangle.", "category": "Spatial Recognition"}
+{"question_id": 102, "point": "021.npy", "text": "No.", "category": "Spatial Recognition"}
+{"question_id": 104, "point": "021.npy", "text": "The number of yellow barrels is 4 while the number of rusty barrels is 1, so the result of multiply is 4.", "category": "Knowledge"}
+{"question_id": 105, "point": "021.npy", "text": "Step 1: Clamp the rusty barrel, which is on the top right corner. Step 2: Take it down from the height. Step 3: Turn around and place its bottom on the ground.", "category": "Embodied Interaction"}
+{"question_id": 108, "point": "021.npy", "text": "This symbol means nuclear radiation. Nuclear radiation is the emission of particles or electromagnetic waves from the nucleus of an unstable atom undergoing radioactive decay. It includes alpha, beta, and gamma radiation, each with different properties and penetration abilities. Radiation can ionize atoms, causing damage to cells and DNA, leading to various health risks.", "category": "Language Generation"}
+{"question_id": 110, "point": "022.npy", "text": "Man.", "category": "General Visual Recognition"}
+{"question_id": 111, "point": "022.npy", "text": "This man's back is hidden by clothes.", "category": "Spatial Recognition"}
+{"question_id": 112, "point": "022.npy", "text": "His cloak was attached to his shoulder armor and hung on his back.", "category": "Spatial Recognition"}
+{"question_id": 113, "point": "022.npy", "text": "No.", "category": "General Visual Recognition"}
+{"question_id": 114, "point": "023.npy", "text": "The model's ear is sharper than normal people's, like an elf.", "category": "Knowledge"}
+{"question_id": 115, "point": "023.npy", "text": "The woman will let go and the arrow will shoot.", "category": "Knowledge"}
+{"question_id": 116, "point": "023.npy", "text": "She is drawing a bow.", "category": "General Visual Recognition"}
+{"question_id": 117, "point": "023.npy", "text": "Step 1: Place the arrow on the bowstring. Step 2: Draw the bow. Step 3: Let go of the arrow.", "category": "Embodied Interaction"}
+{"question_id": 118, "point": "023.npy", "text": "\"Lord of the Rings\" features Legolas, an elf archer skilled in combat. In \"The Hobbit\" series, Tauriel showcases her archery prowess. In \"The Witcher\" TV series, the character of Filavandrel demonstrates elven archery skills. These characters add depth and excitement to their respective stories with their expert marksmanship.", "category": "Language Generation"}
+{"question_id": 120, "point": "023.npy", "text": "The bow is holding in her hand with an arrow rested on the bowstring.", "category": "Spatial Recognition"}
+{"question_id": 121, "point": "023.npy", "text": "Elves are mythical creatures found in folklore worldwide, often depicted as youthful, beautiful beings with pointed ears and magical abilities. They typically inhabit forests or enchanted realms, known for their craftsmanship, archery skills, and connection to nature. Elves feature prominently in various mythologies, literature, and popular culture.", "category": "Language Generation"}
+{"question_id": 122, "point": "024.npy", "text": "Signs will appear on traffic roads.", "category": "Knowledge"}
+{"question_id": 123, "point": "024.npy", "text": "This object can mark the road ahead for the drivers on the road or highway.", "category": "Knowledge"}
+{"question_id": 124, "point": "024.npy", "text": "There are 3 road signs in total.", "category": "General Visual Recognition"}
+{"question_id": 126, "point": "024.npy", "text": "You should refer to the road sign on the far right.", "category": "Embodied Interaction"}
+{"question_id": 128, "point": "025.npy", "text": "Red.", "category": "General Visual Recognition"}
+{"question_id": 130, "point": "025.npy", "text": "People give roses to show their affection, so they may give roses on a date.", "category": "Knowledge"}
+{"question_id": 131, "point": "025.npy", "text": "Step 1: Cut off the branches of the rose diagonally. Step 2: Add water to the vase. Step 3: Insert the pruned roses into the vase", "category": "Embodied Interaction"}
+{"question_id": 132, "point": "025.npy", "text": "In dew-kissed dawn, the rose unfurls,\nPetals soft as whispered dreams,\nCrimson hues in sunlit swirls,\nLove's essence in its seams.\nNature's art, a symphony of grace,\nA fragrant dance, time's embrace.", "category": "Language Generation"}
+{"question_id": 133, "point": "025.npy", "text": "It should grasp the flower stem.", "category": "Embodied Interaction"}
+{"question_id": 134, "point": "026.npy", "text": "There are a sofa, a bathtub, a cabinet and a washstand.", "category": "General Visual Recognition"}
+{"question_id": 135, "point": "026.npy", "text": "First, rise from the sofa; then, proceed straight to the sink to pick up the shampoo; finally, turn right and walk to the bathtub to hand it to you.", "category": "Embodied Interaction"}
+{"question_id": 137, "point": "026.npy", "text": "Two.", "category": "General Visual Recognition"}
+{"question_id": 139, "point": "026.npy", "text": "Yes, two legs of the sofa are on the carpet.", "category": "Spatial Recognition"}
+{"question_id": 140, "point": "026.npy", "text": "The bathtub is in the corner of the room, next to a chair.", "category": "Spatial Recognition"}
+{"question_id": 141, "point": "027.npy", "text": "This is a carved pumpkin.", "category": "General Visual Recognition"}
+{"question_id": 142, "point": "027.npy", "text": "Halloween.", "category": "Knowledge"}
+{"question_id": 143, "point": "027.npy", "text": "Pumpkin, a versatile winter squash, boasts a vibrant orange hue and a round shape with ribbed skin. Rich in nutrients like vitamin A, C, and fiber, it offers a sweet, earthy flavor. Often used in cooking, baking, and carving for festivities, it symbolizes autumn and harvest abundance in various cultures.", "category": "Language Generation"}
+{"question_id": 146, "point": "027.npy", "text": "This is pumpkin, so you should apply less force.", "category": "Embodied Interaction"}
+{"question_id": 144, "point": "028.npy", "text": "There's a board, on which are different kinds of sushi, one dish of Soy sauce, one dish of wasabi and chopsticks.", "category": "General Visual Recognition"}
+{"question_id": 145, "point": "028.npy", "text": "There are 6 sushi in total.", "category": "General Visual Recognition"}
+{"question_id": 147, "point": "028.npy", "text": "There will be 8 sushi if 2 are added.", "category": "Knowledge"}
+{"question_id": 150, "point": "028.npy", "text": "The color of the wasabi is green.", "category": "General Visual Recognition"}
+{"question_id": 151, "point": "028.npy", "text": "Japan.", "category": "Knowledge"}
+{"question_id": 153, "point": "028.npy", "text": "There are 2 chopsticks on the side of the sushi and dip dishes.", "category": "Spatial Recognition"}
+{"question_id": 154, "point": "028.npy", "text": "Step 1: Pick up chopsticks. Step 2: Pick up the sushi with chopsticks. Step 3: Dip in soy sauce and mustard. Step 4: Move the chopsticks to get the sushi into your mouth.", "category": "Embodied Interaction"}
+{"question_id": 155, "point": "028.npy", "text": "The black sushi is closer to the chopsticks.", "category": "Spatial Recognition"}
+{"question_id": 158, "point": "028.npy", "text": "Step 1: Put the dishes into water. Step 2: Wipe the dishes with a cloth dipped in dish soap. Step 3: Rinse the foam off the dishes.", "category": "Embodied Interaction"}
+{"question_id": 159, "point": "028.npy", "text": "Sushi is a kind of Japanese cuisine, the main material is to use vinegar, sugar, salt seasoning, fat and slightly sweet Japanese pearl rice cooked into vinegar rice, after cooling with fish, seafood, vegetables, eggs or other meat and other ingredients.", "category": "Language Generation"}
+{"question_id": 161, "point": "029.npy", "text": "This is a hot woman with long hair in a ponytail, wearing shorts and a bra.", "category": "General Visual Recognition"}
+{"question_id": 162, "point": "029.npy", "text": "Her hands are put on her leg.", "category": "Spatial Recognition"}
+{"question_id": 163, "point": "029.npy", "text": "She is sitting cross-legged, with her hands put on her leg, assuming a meditation posture.", "category": "General Visual Recognition"}
+{"question_id": 164, "point": "030.npy", "text": "He is a centaur.", "category": "General Visual Recognition"}
+{"question_id": 165, "point": "030.npy", "text": "He is standing in the posture of a centaur, with his arms outstretched.", "category": "General Visual Recognition"}
+{"question_id": 168, "point": "030.npy", "text": "A centaur is a mythical creature from Greek mythology, depicted as having the upper body of a human and the lower body of a horse. Known for their strength and wild nature, centaurs often appear in stories as both fearsome warriors and untamed beings associated with forests and wilderness.", "category": "Language Generation"}
+{"question_id": 169, "point": "031.npy", "text": "This is a rocket.", "category": "General Visual Recognition"}
+{"question_id": 170, "point": "031.npy", "text": "A rocket symbolizes a nation's technological prowess, military strength, and scientific advancement. It enables space exploration, satellite deployment, national defense, and international prestige. Rockets facilitate communication, weather forecasting, navigation, and scientific research, contributing significantly to a country's security, economy, and global influence.", "category": "Language Generation"}
+{"question_id": 171, "point": "032.npy", "text": "This object is an ant who lives in groups and has a clear division of labor.", "category": "Knowledge"}
+{"question_id": 172, "point": "032.npy", "text": "The ant is a truly social insect belonging to the family Hymenoptera. Ants are completely metamorphosed insects, which develop into adult insects through stages such as eggs, larvae, and pupae. They work differently in groups depending on their individual form.", "category": "Language Generation"}
+{"question_id": 173, "point": "032.npy", "text": "The queen ant is the adult female ant with reproductive ability in the ant nest, and the whole ant colony is the offspring of the queen ant. Depending on the species, some species may have only one queen in a single nest, while others may have hundreds of fertile queens in a single nest at the same time. Queens can live for up to 30 years.", "category": "Language Generation"}
+{"question_id": 174, "point": "033.npy", "text": "It's a bathtub, and people can take a bath in it.", "category": "Knowledge"}
+{"question_id": 175, "point": "033.npy", "text": "The bathtub is mostly made of china.", "category": "Knowledge"}
+{"question_id": 176, "point": "033.npy", "text": "It might break if hit by something hard.", "category": "Knowledge"}
+{"question_id": 177, "point": "033.npy", "text": "Its drainage outlet is on the left side.", "category": "Spatial Recognition"}
+{"question_id": 178, "point": "033.npy", "text": "It is black and has some moss.", "category": "General Visual Recognition"}
+{"question_id": 179, "point": "033.npy", "text": "Step 1: Plug the outlet tightly and fill the tub with water. Step 2: Add detergent to the water. Step 3: Scrub the tub with a rag, etc. Step 4: Drain the dirty water from the outlet", "category": "Embodied Interaction"}
+{"question_id": 181, "point": "034.npy", "text": "This is a homestead or manor with a main house, a small side house and fence around them.", "category": "General Visual Recognition"}
+{"question_id": 182, "point": "034.npy", "text": "It is a homestead or manor, in which there is a main house, a small house on the side, with a fence around them. The main house has an open door several Windows, and two loft-style Windows on either side of the eaves. Only one circular arch is open in the side room.", "category": "Language Generation"}
+{"question_id": 183, "point": "034.npy", "text": "Fence.", "category": "Spatial Recognition"}
+{"question_id": 184, "point": "034.npy", "text": "This is a homestead or manor, which can hold several people to live in and plant some crops.", "category": "Knowledge"}
+{"question_id": 185, "point": "035.npy", "text": "SpongeBob.", "category": "General Visual Recognition"}
+{"question_id": 186, "point": "035.npy", "text": "\"SpongeBob SquarePants\" is a beloved animated series created by Stephen Hillenburg. Set in the underwater town of Bikini Bottom, it follows the adventures of SpongeBob, a cheerful sea sponge, and his friends, featuring humor, absurdity, and life lessons. Launched in 1999, it remains a cultural phenomenon with enduring popularity worldwide.", "category": "Language Generation"}
+{"question_id": 187, "point": "035.npy", "text": "Pink Starfish is SpongeBob's best friend and neighbor who lives under a rock in the fictional underwater city of Bikini Bottom. Patrick is known for his cheerful but somewhat dim-witted personality, often providing comic relief with his humorous antics and absurd logic. Despite his simple nature, Patrick has a big heart and is always there to support SpongeBob through their various adventures beneath the sea.", "category": "Language Generation"}
+{"question_id": 188, "point": "035.npy", "text": "He opened his mouth wide, and extended his arms, displaying a look of astonishment.", "category": "General Visual Recognition"}
+{"question_id": 189, "point": "035.npy", "text": "This is SpongeBob. His prototype is a sponge, and the cartoon retains the pores on his body. The sponge breathes oxygen and absorbs nutrients from the water through these pores.", "category": "Knowledge"}
+{"question_id": 190, "point": "036.npy", "text": "This is a ukulele.", "category": "General Visual Recognition"}
+{"question_id": 191, "point": "036.npy", "text": "This is a ukulele. The ukulele is smaller and typically has four strings, while the guitar is larger and usually has six strings. The ukulele produces a higher-pitched, more mellow sound compared to the guitar's broader range. Guitar chords and scales are transferable to the ukulele, but the instruments have distinct playing techniques and styles.", "category": "Language Generation"}
+{"question_id": 192, "point": "036.npy", "text": "Use nylon to make strings and wood to make boards.", "category": "Knowledge"}
+{"question_id": 193, "point": "037.npy", "text": "It has two knobs, which typically control the flow of hot water and cold water respectively.", "category": "Knowledge"}
+{"question_id": 194, "point": "037.npy", "text": "It's a water tap which can control the water flow.", "category": "Knowledge"}
+{"question_id": 195, "point": "037.npy", "text": "It has two knobs that can be rotated to allow water to flow from the faucet.", "category": "Embodied Interaction"}
+{"question_id": 196, "point": "037.npy", "text": "It's hard and has a smooth surface. Being made of metal, it has good thermal conductivity. Due to frequent exposure to water, corrosion-resistant and rustproof stainless steel materials are commonly used.", "category": "Knowledge"}
+{"question_id": 197, "point": "037.npy", "text": "Step 1: Put a basin under the water tap. Step 2: Turn the switch to let water out. Step 3: Wait for the basin to fill up. Step 4: Turn off the tap. Step 5: Take out the basin full of water.", "category": "Embodied Interaction"}
+{"question_id": 199, "point": "038.npy", "text": "This is a Dragon. With wings on its back, it probably could fly.", "category": "Knowledge"}
+{"question_id": 201, "point": "038.npy", "text": "The Western dragon is an evil legendary creature. Influenced by Greek mythology, dragons are the keepers of treasures, so. The dragon represents the evil symbol of greed and destruction, and unlike the Chinese dragon, which represents good fortune, the Western dragon likes to hoard and guard treasures, is curious, vengeful, and can breathe fire.", "category": "Language Generation"}
+{"question_id": 202, "point": "039.npy", "text": "This object will show up in the kitchen.", "category": "Knowledge"}
+{"question_id": 203, "point": "039.npy", "text": "It can do some baking, such as baking cakes or roasting meat.", "category": "Knowledge"}
+{"question_id": 204, "point": "039.npy", "text": "On its right side, there are four fans used for exhaust and heat dissipation.", "category": "Spatial Recognition"}
+{"question_id": 205, "point": "039.npy", "text": "Step 1: Preheat oven to 325°F. Step 2: Season turkey with desired herbs and spices. Step 3: Place turkey in a roasting pan and cover with foil. Step 4: Bake turkey for about 15 minutes per pound, or until internal temperature reaches 165°F.", "category": "Embodied Interaction"}
+{"question_id": 206, "point": "039.npy", "text": "Here is a handle door for opening the oven, along with several knobs for setting temperature, time, and other functions.", "category": "Embodied Interaction"}
+{"question_id": 207, "point": "040.npy", "text": "There are 3 melon slices.", "category": "General Visual Recognition"}
+{"question_id": 211, "point": "040.npy", "text": "Step 1: Put the melon on the cutting board. Step 2: Use the knife to cut it into several pieces. Step 3: Put the melon pieces into a plate. Step 4: Clean the knife and the cutting board with water and dishwashing liquid. Step 5: Bring out the plate with the melon.", "category": "Embodied Interaction"}
+{"question_id": 212, "point": "041.npy", "text": "This is a flashlight.", "category": "General Visual Recognition"}
+{"question_id": 214, "point": "041.npy", "text": "Thumb.", "category": "Embodied Interaction"}
+{"question_id": 215, "point": "041.npy", "text": "It's a square with rounded corners.", "category": "Spatial Recognition"}
+{"question_id": 216, "point": "041.npy", "text": "The switch is closer to the bulb than the handle.", "category": "Spatial Recognition"}
+{"question_id": 218, "point": "042.npy", "text": "This is a horse.", "category": "General Visual Recognition"}
+{"question_id": 219, "point": "042.npy", "text": "Horses can be ridden, which can improve the speed of a human, and thus can cause effect not only in people's common life like animal husbandry but also in terms of military aspects, like putting together a cavalry unit.", "category": "Knowledge"}
+{"question_id": 220, "point": "042.npy", "text": "The horse, a majestic creature of the Equidae family, possesses strength, agility, and grace. With a powerful physique, flowing mane, and expressive eyes, it epitomizes beauty in motion. Domesticated for millennia, horses serve humanity in transportation, agriculture, sport, and companionship, forging an enduring bond between human and beast.", "category": "Language Generation"}
+{"question_id": 221, "point": "043.npy", "text": "This is a knife with a knife sheath.", "category": "General Visual Recognition"}
+{"question_id": 222, "point": "043.npy", "text": "It's a knife. It has a wooden handle and a white body, wrapped in a delicate sheath. The knife sheath is made of leather, with a loop attached to the handle. The sheath covers most of the blade. The knife sheath itself is very delicate, with a complex pattern on it.", "category": "Language Generation"}
+{"question_id": 223, "point": "043.npy", "text": "Leather.", "category": "Knowledge"}
+{"question_id": 225, "point": "043.npy", "text": "Step 1: Take the knife out of the sheath. Step 2: Clean the blade with a towel or something. Step 3: Put the knife back in its sheath.", "category": "Embodied Interaction"}
+{"question_id": 226, "point": "044.npy", "text": "A circular weighing plate.", "category": "General Visual Recognition"}
+{"question_id": 229, "point": "044.npy", "text": "There are a body, a dial to read the weighing data and a pan to put things to be weighted on.", "category": "General Visual Recognition"}
+{"question_id": 230, "point": "044.npy", "text": "Step 1: Pick up the first thing to be weighed and put it on the weighing machine. Step 2: Read and record the weight. Step 3: Pick up the second thing to be weighed and put it on the weighing machine. Step 4: Read and record the weight. Step 5: Put the heavier one in the front and the lighter one in the back.", "category": "Embodied Interaction"}
+{"question_id": 231, "point": "044.npy", "text": "It is a weighing scale.", "category": "Spatial Recognition"}
+{"question_id": 232, "point": "044.npy", "text": "It is a circular pointer dial.", "category": "Spatial Recognition"}
+{"question_id": 234, "point": "045.npy", "text": "This is an ancient arch.", "category": "General Visual Recognition"}
+{"question_id": 235, "point": "045.npy", "text": "Countries with ancient arches include Italy, home to the iconic Roman arches like the Arch of Constantine in Rome; Jordan, featuring the stunning ruins of the ancient city of Petra with its intricate rock-cut arches; and Greece, showcasing remnants of arches in archaeological sites like the Acropolis in Athens.", "category": "Language Generation"}
+{"question_id": 236, "point": "045.npy", "text": "This wall is made up of 4 pillars.", "category": "General Visual Recognition"}
+{"question_id": 239, "point": "046.npy", "text": "She is wearing a white shirt, a black skirt and black shoes.", "category": "General Visual Recognition"}
+{"question_id": 240, "point": "046.npy", "text": "Office.", "category": "Knowledge"}
+{"question_id": 241, "point": "047.npy", "text": "5.", "category": "General Visual Recognition"}
+{"question_id": 242, "point": "047.npy", "text": "This chest has 3 layers of drawers.", "category": "General Visual Recognition"}
+{"question_id": 243, "point": "047.npy", "text": "Open the first drawer and check for any documents. If none are found, open the second drawer and check for documents. If still none are found, open the third drawer and check for documents.", "category": "Embodied Interaction"}
+{"question_id": 244, "point": "048.npy", "text": "This is a slot machine.", "category": "General Visual Recognition"}
+{"question_id": 245, "point": "048.npy", "text": "This object might in casino or arcade.", "category": "Knowledge"}
+{"question_id": 246, "point": "048.npy", "text": "On the top of the object, there's a label with text 'ARCADE'.", "category": "Spatial Recognition"}
+{"question_id": 247, "point": "048.npy", "text": "This is a gaming console with several buttons and two joysticks for interaction.", "category": "Embodied Interaction"}
+{"question_id": 249, "point": "048.npy", "text": "Gambling is a game that uses valuable things to compete to win or lose. It is a form of entertainment for human beings. In Western society, it refers to betting money or something of material value on an event with an uncertain outcome, with the primary purpose of winning money or material value.", "category": "Language Generation"}
+{"question_id": 250, "point": "049.npy", "text": "This is a stove.", "category": "General Visual Recognition"}
+{"question_id": 251, "point": "049.npy", "text": "This object may be found in kitchens, campsites, and other places where a fire is needed to cook.", "category": "Knowledge"}
+{"question_id": 252, "point": "049.npy", "text": "There are 3 iron frames.", "category": "Spatial Recognition"}
+{"question_id": 253, "point": "050.npy", "text": "There are 8 steps on the ladder.", "category": "General Visual Recognition"}
+{"question_id": 254, "point": "050.npy", "text": "People can use this ladder to climb to the heights, for example, the roof or the tree.", "category": "Knowledge"}
+{"question_id": 255, "point": "051.npy", "text": "The are 3 chairs in the scene.", "category": "General Visual Recognition"}
+{"question_id": 256, "point": "051.npy", "text": "There is a basket and a vase on the top of the table, with flowers in the vase.", "category": "Spatial Recognition"}
+{"question_id": 257, "point": "051.npy", "text": "One of the chairs is exposed halfway.", "category": "Spatial Recognition"}
+{"question_id": 258, "point": "051.npy", "text": "It is a vase full of flowers.", "category": "Spatial Recognition"}
+{"question_id": 259, "point": "051.npy", "text": "Step 1: Move to the side that has only one chair. Step 2: Pick up the chair with my arm. Step 3: Move to the other side of the table with the chair. Step 4: Put down the chair.", "category": "Embodied Interaction"}
+{"question_id": 262, "point": "052.npy", "text": "This object is a hammer. It can drive nails, straighten or pry objects apart, or extract nails using the wedge-shaped end.", "category": "Knowledge"}
+{"question_id": 263, "point": "052.npy", "text": "Step 1: Put the nail on the wall. Step 2: Hit the nail with the hammer. Step 3: If the nail has already been driven into the wall, then stop smashing.", "category": "Embodied Interaction"}
+{"question_id": 264, "point": "052.npy", "text": "People began using hammers around 3.3 million years ago, during the Stone Age. Initially fashioned from stones and wood, they were primarily used for pounding and shaping materials like flint for tools and weapons. Over time, their design evolved, becoming indispensable in various tasks from construction to crafting.", "category": "Language Generation"}
+{"question_id": 265, "point": "053.npy", "text": "This object is a Pokeball which appears in animation Pokemon dreams.", "category": "Knowledge"}
+{"question_id": 267, "point": "053.npy", "text": "Pokemon is an extremely popular and enduring Japanese multimedia franchise that includes an animated series, video games, trading card games, movies, and a variety of merchandise. The Pokemon animated series has been a big part of the series' success, attracting viewers of all ages around the world. The anime tells the adventures of a young man named Satoshi and his faithful companion Pikachu.", "category": "Language Generation"}
+{"question_id": 268, "point": "053.npy", "text": "The side with the circle is more likely to be the front of this object.", "category": "Spatial Recognition"}
+{"question_id": 271, "point": "054.npy", "text": "This is a cup of coffee, on a tray with two pieces of chocolate and a spoon on the side.", "category": "General Visual Recognition"}
+{"question_id": 272, "point": "054.npy", "text": "The prints on the cup depict two hearts, symbolizing love, friendship, or family affection.", "category": "Knowledge"}
+{"question_id": 274, "point": "054.npy", "text": "Step 1: Put the chocolate into this cup of coffee. Step 2: Pick up the spoon. Step 3: Stir the coffee with the spoon until the chocolate melts.", "category": "Embodied Interaction"}
+{"question_id": 275, "point": "054.npy", "text": "Coffee offers numerous benefits, including increased alertness, improved cognitive function, and enhanced mood due to its caffeine content. It may boost metabolism, aid in fat burning, and reduce the risk of certain diseases like Alzheimer's and Parkinson's. Its antioxidants also contribute to overall health and longevity.", "category": "Language Generation"}
+{"question_id": 277, "point": "055.npy", "text": "Black spots on bananas indicate overripeness or bruising.", "category": "Knowledge"}
+{"question_id": 278, "point": "055.npy", "text": "Bananas have a sweet, creamy taste with subtle notes of tartness. Their texture is soft and smooth, sometimes slightly fibrous, offering a satisfyingly delicate mouthfeel.", "category": "Language Generation"}
+{"question_id": 280, "point": "055.npy", "text": "Step 1: Pick up the banana. Step 2: Peel the banana. Step 3: Feed you several bites. Step4: Throw the banana peel to the dustbin.", "category": "Embodied Interaction"}
+{"question_id": 282, "point": "056.npy", "text": "This is a wooden box that looks like a treasure chest.", "category": "General Visual Recognition"}
+{"question_id": 283, "point": "056.npy", "text": "The anime One Piece relates more to this object, which is a treasure box, for the main theme of this anime is to find unique treasures \"One Piece\".", "category": "Knowledge"}
+{"question_id": 284, "point": "056.npy", "text": "Yes.", "category": "Embodied Interaction"}
+{"question_id": 286, "point": "057.npy", "text": "The bow is on her right hand.", "category": "Spatial Recognition"}
+{"question_id": 287, "point": "057.npy", "text": "She is wearing armor and a cloak, carrying a bow and arrow, and a quiver on her back, seems very good at fighting.", "category": "General Visual Recognition"}
+{"question_id": 292, "point": "058.npy", "text": "The bedspread on the bed needs to be straightened.", "category": "Embodied Interaction"}
+{"question_id": 294, "point": "058.npy", "text": "bedroom.", "category": "Knowledge"}
+{"question_id": 295, "point": "058.npy", "text": "It was a big soft bed with two pillows at the head and a gauze scarf at the end.", "category": "General Visual Recognition"}

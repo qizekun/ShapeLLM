@@ -1,0 +1,31 @@
+dataset:
+  train:
+    _base_: ReConV2/cfgs/dataset_configs/ModelNet40.yaml
+    others:
+      subset: 'train'
+  val:
+    _base_: ReConV2/cfgs/dataset_configs/ModelNet40.yaml
+    others:
+      subset: 'test'
+  test:
+    _base_: ReConV2/cfgs/dataset_configs/ModelNet40.yaml
+    others:
+      subset: 'test'
+
+model:
+  NAME: PointTransformerSVM
+  embed_dim: 1024
+  depth: 16
+  drop_path_rate: 0.1
+  cls_dim: 40
+  num_heads: 16
+  group_size: 32
+  num_group: 64
+  with_color: FALSE
+  large_embedding: False
+  img_queries: 13
+  text_queries: 3
+
+npoints: 1024
+total_bs: 128
+grad_norm_clip: 10

@@ -13,24 +13,23 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shapellm-universal-3d-object-understanding/few-shot-3d-point-cloud-classification-on-3)](https://paperswithcode.com/sota/few-shot-3d-point-cloud-classification-on-3?p=shapellm-universal-3d-object-understanding)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shapellm-universal-3d-object-understanding/3d-point-cloud-linear-classification-on)](https://paperswithcode.com/sota/3d-point-cloud-linear-classification-on?p=shapellm-universal-3d-object-understanding)
 
-<a href="https://qizekun.github.io/shapellm/"><img src="https://img.shields.io/badge/Project-Page-Green"></a>
-<a href="https://arxiv.org/abs/2402.17766"><img src="https://img.shields.io/badge/Paper-PDF-orange"></a>
+[![Project Page](https://img.shields.io/badge/Project-Page-Green.svg)](https://qizekun.github.io/shapellm/)
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-orange.svg)](https://arxiv.org/abs/2402.17766)
+[![Hugging Face](https://img.shields.io/badge/🤗-Hugging_Face-yellow.svg)](https://huggingface.co/collections/qizekun/shapellm-65e978379c1260a85abe8aee)
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/DATA_LICENSE)
-
-[//]: # (**Usage and License Notices**: The data and checkpoint is intended and licensed for research use only. They are also restricted to uses that follow the license agreement of LLaMA, Vicuna and GPT-4. The dataset is CC BY NC 4.0 &#40;allowing only non-commercial use&#41; and models trained using the dataset should not be used outside of research purposes.)
 
 <div style="text-align: center;">
     <img src="assets/framework.jpg" width=100% >
 </div>
 
-<span style="color:#FFA07A;">**1.**</span> ShapeLLM is the first 3D Multimodal Large Language Model designed for <span style="color: #fe8e8e;"><b>embodied interaction</b></span>.</li>
+**1.** ShapeLLM is the first 3D Multimodal Large Language Model designed for `embodied interaction`.
 
-<span style="color:#87CEEB;">**2.**</span> ShapeLLM supports <span style="color: #fe8e8e;"><b>single-view colored point cloud input</b></span>, which can be effortlessly obtained from RGBD cameras.</li>
+**2.** ShapeLLM supports `single-view colored point cloud input`, which can be effortlessly obtained from RGBD cameras.
+ 
+**3.** We introduce a robust 3D QA benchmark, `3D MM-Vet`, encompassing various variants including single-view, noise jitter, etc.
 
-<span style="color:#98FB98;">**3.**</span> We introduce a robust 3D QA benchmark, <span style="color: #fe8e8e;"><b>3D MM-Vet</b></span>, encompassing various variants including single-view, noise jitter, etc.</li>
-
-<span style="color:#FFB6C1;">**4.**</span> We extend the powerful point encoder architecture, <span style="color: #fe8e8e;"><b>ReCon++</b></span>, achieving state-of-the-art performance across a range of representation learning tasks.</li>
+**4.** We extend the powerful point encoder architecture, `ReCon++`, achieving state-of-the-art performance across a range of representation learning tasks.
 
 ## Contents
 - [Install](#install)
@@ -146,10 +145,10 @@ Please check out our [Model Zoo](https://github.com/qizekun/ShapeLLM/blob/main/d
 ### Pretrain
 ReCon++ adopts a two-stage pre-training approach, initially conducting generative pre-training in either random or causal form, followed by cross-modal contrastive learning. It is worth noting that we employ a gradient stopping strategy for transfer learning tasks, while we do not use gradient stopping for zero-shot tasks.
 ```
-sh scripts/pretrain_reconstruch.sh <exp_name>
+sh ReConV2/scripts/pretrain_reconstruch.sh <exp_name>
 ```
 ```
-sh scripts/pretrain_contrast.sh <exp_name> <path/to/stage1-pre-trained/model>
+sh ReConV2/scripts/pretrain_contrast.sh <exp_name> <path/to/stage1-pre-trained/model>
 ```
 
 ### Classification

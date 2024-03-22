@@ -204,33 +204,45 @@ bash ReConV2/scripts/zeroshot.sh <GPU> <exp_name> <path/to/pre-trained/model>
 
 The test data and scripts have been uploaded to [Hugging Face](https://huggingface.co/datasets/qizekun/3D-MM-Vet). You can also locate the evaluation scripts from the [codebase](https://github.com/qizekun/ShapeLLM/blob/main/scripts/eval/eval_mmvet.sh) of ShapeLLM.
 
-Furthermore, we propose 3D MM-Vet-C, which contains three variants: single-view, jitter, and rotation. They represent extracting partial point clouds of the front view field of view, adding Gaussian noise to the point cloud xyz, and randomly rotation on the x, y, and z axes, respectively.
+Furthermore, we propose 3D MM-Vet-C, which contains three variants: single-view, jitter, and rotation. They represent extracting partial point clouds of the front view field of view, adding Gaussian noise to the point cloud xyz, and random rotation on the x, y, and z axes, respectively.
 
 Here is a more detailed explanation of each variant:
 
-- **Single-view**: This variant focuses on the model's ability to understand the 3D object from a single viewpoint. To create the single-view variant, we extract the front view point cloud of each model.
+- **Single-view**: This variant focuses on the model's ability to understand the 3D object from a single viewpoint. To create the single-view variant, we extract the front-view point cloud of each model.
 - **Jitter**: This variant tests the model's robustness to noise. To create the jitter variant, we add Gaussian noise with zero mean and variance of 0.01 to the point cloud xyz.
 - **Rotation**: This variant examines the model's ability to understand the 3D scene from different viewpoints. To create the rotation variant, we randomly apply 30 degrees of random rotation on the x, y, and z axes.
 
-We believe that 3D MM-Vet and 3D MM-Vet-C are valuable resources for the 3D QA community. They can be used to evaluate the performance of existing models and to develop new models that are better at understanding and reasoning about 3D Object.
+We believe that 3D MM-Vet and 3D MM-Vet-C are valuable resources for the 3D QA community. They can be used to evaluate the performance of existing models and to develop new models that are better at understanding and reasoning about 3D objects.
 
+## Visualization
+We use [PointVisualizaiton](https://github.com/qizekun/PointVisualizaiton) repo to render beautiful point cloud images, including specified color rendering and attention distribution rendering.
 
 ## Citation
 
 If you find ShapeLLM or ReCon++ useful for your research and applications, please cite using this BibTeX:
 ```bibtex
-
 @article{qi2024shapellm,
   author = {Qi, Zekun and Dong, Runpei and Zhang, Shaochen and Geng, Haoran and Han, Chunrui and Ge, Zheng and Wang, He and Yi, Li and Ma, Kaisheng},
   title = {ShapeLLM: Universal 3D Object Understanding for Embodied Interaction},
   journal = {arXiv preprint arXiv:2402.17766},
-  year = {2024},
+  year = {2024}
 }
-
+```
+and closely related work ReCon and ACT:
+```bibtex
 @inproceedings{qi2023recon,
   title={Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining},
   author={Qi, Zekun and Dong, Runpei and Fan, Guofan and Ge, Zheng and Zhang, Xiangyu and Ma, Kaisheng and Yi, Li},
   booktitle={International Conference on Machine Learning (ICML) },
+  url={https://openreview.net/forum?id=80IfYewOh1},
+  year={2023}
+}
+
+@inproceedings{dong2023act,
+  title={Autoencoders as Cross-Modal Teachers: Can Pretrained 2D Image Transformers Help 3D Representation Learning?},
+  author={Runpei Dong and Zekun Qi and Linfeng Zhang and Junbo Zhang and Jianjian Sun and Zheng Ge and Li Yi and Kaisheng Ma},
+  booktitle={The Eleventh International Conference on Learning Representations (ICLR) },
+  url={https://openreview.net/forum?id=8Oun8ZUVe8N},
   year={2023}
 }
 ```

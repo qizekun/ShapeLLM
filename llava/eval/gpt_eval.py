@@ -1,12 +1,10 @@
 import time
-import json
 import openai
-import requests
 
 NUM_SECONDS_TO_SLEEP = 1.0
 
-openai.api_base = "http://openai.group-megvii-aic-research-hardware.megvii-aic.svc.hh-d.brainpp.local:5000/gpt4/v1"  # if needed
-openai.api_key = "sk-ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SjFjMlZ5Ym1GdFpTSTZJbWhoYm1Ob2RXNXlkV2tpZlEucWdWaldsZW1hNWFmTlhMSExoNFZVTnY3VHVkeW9rdGVENFpjZDVyZHpsNA=="
+openai.api_base = ""  # if needed
+openai.api_key = ""
 
 
 def gpt_get_score(question, question_type, answer_model, answer_label, model="gpt-3.5-turbo"):

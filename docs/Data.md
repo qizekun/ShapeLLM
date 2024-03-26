@@ -32,11 +32,11 @@ The overall directory structure should be:
 ```
 │llava/
 │ReConV2/
-│data/
-├──OpenShape/
-├──ModelNet/
-├──ModelNetFewshot/
-├──ScanObjectNN/
+│  └──data/
+│    ├──OpenShape/
+│    ├──ModelNet/
+│    ├──ModelNetFewshot/
+│    └──ScanObjectNN/
 ```
 
 ### OpenShape Dataset:

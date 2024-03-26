@@ -10,7 +10,8 @@ from .build import MODELS
 from ReConV2.utils.logger import *
 from ReConV2.extensions.chamfer_distance import ChamferDistance
 from ReConV2.utils.checkpoint import get_missing_parameters_message, get_unexpected_parameters_message
-from ReConV2.models.transformer import Group, ZGroup, PatchEmbedding, PositionEmbeddingCoordsSine, GPTExtractor, GPTGenerator, MAEExtractor, MAEGenerator
+from ReConV2.models.transformer import Group, ZGroup, PatchEmbedding, PositionEmbeddingCoordsSine, GPTExtractor, \
+    GPTGenerator, MAEExtractor, MAEGenerator
 
 
 # Pretrain model
@@ -30,11 +31,12 @@ class MaskTransformer(nn.Module):
         self.mask_ratio = config.mask_ratio
         self.stop_grad = config.stop_grad
 
-        self.embed = PatchEmbedding(embed_dim=self.embed_dim, input_channel=self.input_channel, large=config.large_embedding)
+        self.embed = PatchEmbedding(embed_dim=self.embed_dim, input_channel=self.input_channel,
+                                    large=config.large_embedding)
 
         print_log(f'[ReCon] divide point cloud into G{config.num_group} x S{config.group_size} points ...',
                   logger='ReCon')
-        
+
         if self.mask_type == 'causal':
             self.group_divider = ZGroup(num_group=config.num_group, group_size=config.group_size)
             self.encoder = GPTExtractor(
@@ -99,7 +101,8 @@ class MaskTransformer(nn.Module):
             print_log(f'[ReCon] No pretrained model is loaded.', logger='ReCon')
         elif config.pretrained_model_name in timm.list_models(pretrained=True):
             self.encoder.blocks.load_pretrained_timm_weights()
-            print_log(f'[ReCon] Timm pretrained model {config.pretrained_model_name} is successful loaded.', logger='ReCon')
+            print_log(f'[ReCon] Timm pretrained model {config.pretrained_model_name} is successful loaded.',
+                      logger='ReCon')
         else:
             print_log(f'[ReCon] Pretrained model {config.pretrained_model_name} is not found in Timm.', logger='ReCon')
 
@@ -376,7 +379,7 @@ class ReCon2(nn.Module):
         print(losses)
         loss = sum(losses.values())
         return loss
-    
+
     def forward(self, pts, img, text, type="all"):
         if type == "all":
             return self.forward_all(pts, img, text)
@@ -403,9 +406,12 @@ class PointTransformer(nn.Module):
         super().__init__()
         self.config = config
 
+        self.cls_dim = config.cls_dim
         self.embed_dim = config.embed_dim
         self.with_color = config.with_color
         self.input_channel = 6 if self.with_color else 3
+        self.num_group = config.num_group
+        self.group_size = config.group_size
         self.img_queries = config.img_queries
         self.text_queries = config.text_queries
         self.global_query_num = self.img_queries + self.text_queries
@@ -423,7 +429,7 @@ class PointTransformer(nn.Module):
             depth=config.depth,
             group_size=config.group_size,
             drop_path_rate=config.drop_path_rate,
-            stop_grad=True,
+            stop_grad=False,
         )
 
         self.decoder = GPTGenerator(
@@ -437,8 +443,7 @@ class PointTransformer(nn.Module):
         self.global_query = nn.Parameter(torch.zeros(1, self.global_query_num, self.embed_dim))
         self.cls_token = nn.Parameter(torch.zeros(1, 1, self.embed_dim))
 
-        self.cls_norm = nn.LayerNorm(self.trans_dim)
-        feature_dim = self.trans_dim * 4
+        feature_dim = self.embed_dim * 4
         self.cls_head_finetune = nn.Sequential(
             nn.Linear(feature_dim, 256),
             nn.BatchNorm1d(256),
@@ -454,8 +459,7 @@ class PointTransformer(nn.Module):
         self.loss_ce = nn.CrossEntropyLoss()
 
         # chamfer distance loss
-        self.cd_l1_loss = ChamferDistanceL1().cuda()
-        self.cd_l2_loss = ChamferDistanceL2().cuda()
+        self.cd_loss = ChamferDistance()
 
         self.apply(self._init_weights)
 
@@ -521,10 +525,10 @@ class PointTransformer(nn.Module):
 
         relative_position = center[:, 1:, :] - center[:, :-1, :]
         relative_norm = torch.norm(relative_position, dim=-1, keepdim=True)
-        relative_direction = relative_position / relative_norm
-        position = torch.cat(
-            [center[:, 0, :].unsqueeze(1), relative_direction], dim=1)
+        relative_direction = relative_position / (relative_norm + 1e-5)
+        position = torch.cat([center[:, 0, :].unsqueeze(1), relative_direction], dim=1)
         pos_relative = self.pos_embed(position).to(group_input_tokens.dtype)
+
         pos = self.pos_embed(center).to(group_input_tokens.dtype)
 
         attn_mask = torch.full(
@@ -534,19 +538,23 @@ class PointTransformer(nn.Module):
 
         # transformer
         encoded_features, global_tokens = self.encoder(group_input_tokens, pos, attn_mask, query)
-        generated_points = self.generator_blocks(encoded_features, pos_relative, attn_mask)
+        generated_points = self.decoder(encoded_features, pos_relative, attn_mask)
 
-        # neighborhood = neighborhood + center.unsqueeze(2)
+        # neighborhood[:, :, :, :3] = neighborhood[:, :, :, :3] + center.unsqueeze(2)
         gt_points = neighborhood.reshape(batch_size * self.num_group, self.group_size, self.input_channel)
 
-        cd_l1_loss = self.cd_l1_loss(generated_points, gt_points)
-        cd_l2_loss = self.cd_l2_loss(generated_points, gt_points)
+        generated_xyz = generated_points[:, :, :3]
+        gt_xyz = gt_points[:, :, :3]
+        dist1, dist2, idx = self.cd_loss(generated_xyz, gt_xyz)
+
+        cd_l2_loss = (torch.mean(dist1)) + (torch.mean(dist2))
+        cd_l1_loss = (torch.mean(torch.sqrt(dist1)) + torch.mean(torch.sqrt(dist2))) / 2
 
         img_token = global_tokens[:, :self.img_queries]
         text_token = global_tokens[:, self.img_queries:-1]
         cls_token = global_tokens[:, -1]
 
-        concat_f = torch.cat([cls_token, img_token.max(1)[0], text_token, encoded_features.max(1)[0]], dim=-1)
-        concat_f = self.cls_norm(concat_f)
+        concat_f = torch.cat([cls_token, img_token.max(1)[0], text_token.max(1)[0], encoded_features.max(1)[0]], dim=-1)
         ret = self.cls_head_finetune(concat_f)
+
         return ret, cd_l1_loss + cd_l2_loss

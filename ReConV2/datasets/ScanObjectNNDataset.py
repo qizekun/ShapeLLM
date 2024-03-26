@@ -14,6 +14,7 @@ class ScanObjectNN(Dataset):
         super().__init__()
         self.subset = config.subset
         self.root = config.ROOT
+        self.use_color = config.with_color
 
         if self.subset == 'train':
             h5 = h5py.File(os.path.join(self.root, 'training_objectdataset.h5'), 'r')
@@ -36,7 +37,9 @@ class ScanObjectNN(Dataset):
             np.random.shuffle(pt_idxs)
 
         current_points = self.points[idx, pt_idxs].copy()
-
+        if self.use_color:
+            rgb = np.ones_like(current_points) * 0.4
+            current_points = np.concatenate([current_points, rgb], axis=-1)
         current_points = torch.from_numpy(current_points).float()
         label = self.labels[idx]
 
@@ -52,6 +55,7 @@ class ScanObjectNN_hardest(Dataset):
         super().__init__()
         self.subset = config.subset
         self.root = config.ROOT
+        self.use_color = config.with_color
 
         if self.subset == 'train':
             h5 = h5py.File(os.path.join(self.root, 'training_objectdataset_augmentedrot_scale75.h5'), 'r')
@@ -74,7 +78,9 @@ class ScanObjectNN_hardest(Dataset):
             np.random.shuffle(pt_idxs)
 
         current_points = self.points[idx, pt_idxs].copy()
-
+        if self.use_color:
+            rgb = np.ones_like(current_points) * 0.4
+            current_points = np.concatenate([current_points, rgb], axis=-1)
         current_points = torch.from_numpy(current_points).float()
         label = self.labels[idx]
 

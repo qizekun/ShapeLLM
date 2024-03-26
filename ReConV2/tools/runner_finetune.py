@@ -36,6 +36,8 @@ class Acc_Metric:
 def run_net(args, config):
     logger = get_logger(args.log_name)
     # build dataset
+    config.dataset.train.others.with_color = config.model.with_color
+    config.dataset.val.others.with_color = config.model.with_color
     (train_sampler, train_dataloader), (_, test_dataloader), = builder.dataset_builder(args, config.dataset.train), \
                                                                builder.dataset_builder(args, config.dataset.val)
     # build model
@@ -104,12 +106,10 @@ def run_net(args, config):
         losses = AverageMeter(['loss', 'acc'])
         num_iter = 0
         base_model.train()  # set model to training mode
-        n_batches = len(train_dataloader)
 
         npoints = config.npoints
         for idx, (taxonomy_ids, model_ids, data) in enumerate(train_dataloader):
             num_iter += 1
-            n_itr = epoch * n_batches + idx
 
             data_time.update(time.time() - batch_start_time)
 
@@ -137,7 +137,7 @@ def run_net(args, config):
             points = train_transforms(points)
             ret, cd_loss = base_model(points)
             loss, acc = base_model.module.get_loss_acc(ret, label)
-            _loss = loss + cd_loss
+            _loss = loss + 3 * cd_loss
             _loss.backward()
 
             # forward
@@ -203,7 +203,7 @@ def validate(base_model, test_dataloader, epoch, args, config, best_metrics, log
 
             points = misc.fps(points, npoints)
 
-            logits = base_model(points)
+            logits, _ = base_model(points)
             target = label.view(-1)
 
             pred = logits.argmax(-1).view(-1)

@@ -5,7 +5,8 @@ import numpy as np
 
 class PointcloudRotate(object):
     def __call__(self, pc):
-        bsize = pc.size()[0]
+        xyz = pc[:, :, :3]
+        bsize = xyz.size()[0]
         for i in range(bsize):
             rotation_angle = np.random.uniform() * 2 * np.pi
             cosval = np.cos(rotation_angle)
@@ -13,8 +14,9 @@ class PointcloudRotate(object):
             rotation_matrix = np.array([[cosval, 0, sinval],
                                         [0, 1, 0],
                                         [-sinval, 0, cosval]])
-            R = torch.from_numpy(rotation_matrix.astype(np.float32)).to(pc.device)
-            pc[i, :, :] = torch.matmul(pc[i], R)
+            R = torch.from_numpy(rotation_matrix.astype(np.float32)).to(xyz.device)
+            xyz[i, :, :] = torch.matmul(xyz[i], R)
+        pc[:, :, :3] = xyz
         return pc
 
 

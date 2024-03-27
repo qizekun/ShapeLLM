@@ -228,7 +228,7 @@ If you find ShapeLLM or ReCon++ useful for your research and applications, pleas
   year = {2024}
 }
 ```
-and closely related work ReCon and ACT:
+and closely related work [ReCon](https://github.com/qizekun/ReCon) and [ACT](https://github.com/RunpeiDong/ACT):
 ```bibtex
 @inproceedings{qi2023recon,
   title={Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining},

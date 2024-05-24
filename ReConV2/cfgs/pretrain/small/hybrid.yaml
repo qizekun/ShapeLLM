@@ -14,10 +14,10 @@ dataset:
   train:
     _base_: ReConV2/cfgs/dataset_configs/Hybrid.yaml
     others:
-      subset: 'train'
+      subset: train
       npoints: 1024
-      whole: TRUE
-      using_saved_features: TRUE
+      whole: True
+      using_saved_features: True
 
 model:
   NAME: ReCon2
@@ -29,10 +29,11 @@ model:
   drop_path_rate: 0.1
   num_heads: 6
   decoder_depth: 4
-  with_color: FALSE
-  img_views: 10
-  img_encoder: 'ViT-B/32'
-  text_encoder: 'ViT-B/32'
+  with_color: False
+  large_embedding: False
+  img_queries: 13
+  text_queries: 3
+  pretrained_model_name: vit_small_patch14_dinov2.lvd142m
 
 npoints: 1024
 total_bs: 256

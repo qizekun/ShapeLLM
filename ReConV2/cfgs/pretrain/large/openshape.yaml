@@ -1,7 +1,7 @@
 optimizer:
   type: AdamW
   kwargs:
-    lr: 0.00005
+    lr: 5e-5
     weight_decay: 0.05
 
 scheduler:
@@ -14,7 +14,7 @@ dataset:
   train:
     _base_: ReConV2/cfgs/dataset_configs/OpenShape.yaml
     others:
-      subset: 'train'
+      subset: train
       npoints: 10000
       rgb_random_drop_prob: 0.5
       occlusion: False
@@ -35,10 +35,10 @@ model:
   large_embedding: False
   img_queries: 13
   text_queries: 3
-  contrast_type: 'byol'
-  pretrained_model_name: 'eva_large_patch14_336.in22k_ft_in22k_in1k'
-#  pretrained_model_name: 'vit_large_patch14_clip_336.openai'
-#  pretrained_model_name: 'vit_large_patch14_reg4_dinov2.lvd142m'
+  contrast_type: byol
+  pretrained_model_name: eva_large_patch14_336.in22k_ft_in22k_in1k
+#  pretrained_model_name: vit_large_patch14_clip_336.openai
+#  pretrained_model_name: vit_large_patch14_reg4_dinov2.lvd142m
 
 modelnet40:
   test_split: ReConV2/data/openshape/meta_data/modelnet40/test_split.json

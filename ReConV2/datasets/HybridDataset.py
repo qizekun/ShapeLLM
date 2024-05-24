@@ -9,8 +9,6 @@ from .build import DATASETS
 from ReConV2.utils.logger import *
 from ReConV2.utils.transforms import get_transforms
 
-import io
-import refile
 from joblib import Parallel, delayed
 
 
@@ -62,23 +60,11 @@ class Hybrid(data.Dataset):
 
     def read_single_img(self, view_index, index):
 
-        # img_index = f'{index.replace("/", "-")[:-4]}-{view_index}.jpg'
-        # img_path = os.path.join(self.img_path, img_index)
-        # img = Image.open(img_path).convert('RGB')
-        # img = get_transforms()['train'](img)
-
-        img_path = f's3://qzk/HybridDatasets/depth/{index}-{view_index}.jpg'
-        while True:
-            try:
-                with refile.smart_open(img_path, "rb") as f:
-                    bytes_data = f.read()
-                break
-            except:
-                print('img_path', img_path)
-                import time
-                time.sleep(1)
-        img = Image.open(io.BytesIO(bytes_data), "r").convert('RGB')
+        img_index = f'{index.replace("/", "-")[:-4]}-{view_index}.jpg'
+        img_path = os.path.join(self.img_path, img_index)
+        img = Image.open(img_path).convert('RGB')
         img = get_transforms()['train'](img)
+
         return img
 
     def parallel_load_img(self, index, max_workers):
@@ -101,17 +87,7 @@ class Hybrid(data.Dataset):
             img = self.read_single_img(view_index, index)
         else:
             if self.using_saved_features:
-                img_list = f's3://qzk/features/hybrid_clip_B32/{index}.pt'
-                while True:
-                    try:
-                        with refile.smart_open(img_list, "rb") as f:
-                            bytes_data = f.read()
-                        break
-                    except:
-                        import time
-                        print('img_list', img_list)
-                        time.sleep(1)
-                img = torch.load(io.BytesIO(bytes_data))
+                pass
             else:
                 img_list = self.parallel_load_img(index, max_workers=10)
                 img = torch.stack(img_list, dim=0)

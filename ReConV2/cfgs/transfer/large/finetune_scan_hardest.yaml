@@ -14,11 +14,11 @@ dataset:
   train:
     _base_: ReConV2/cfgs/dataset_configs/ScanObjectNN_hardest.yaml
     others:
-      subset: 'train'
+      subset: train
   val:
     _base_: ReConV2/cfgs/dataset_configs/ScanObjectNN_hardest.yaml
     others:
-      subset: 'test'
+      subset: test
 
 model:
   NAME: PointTransformer
@@ -29,7 +29,8 @@ model:
   num_heads: 16
   group_size: 32
   num_group: 128
-  with_color: True
+  with_color: False
+  large_embedding: True
   img_queries: 13
   text_queries: 3
   decoder_depth: 4

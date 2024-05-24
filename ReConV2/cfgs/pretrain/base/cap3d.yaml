@@ -1,7 +1,7 @@
 optimizer:
   type: AdamW
   kwargs:
-    lr: 0.00005
+    lr: 5e-5
     weight_decay: 0.05
 
 scheduler:
@@ -14,9 +14,9 @@ dataset:
   train:
     _base_: ReConV2/cfgs/dataset_configs/Cap3D.yaml
     others:
-      subset: 'train'
+      subset: train
       npoints: 1024
-      using_saved_features: TRUE
+      using_saved_features: True
 
 model:
   NAME: ReCon2
@@ -29,10 +29,10 @@ model:
   drop_path_rate: 0.1
   num_heads: 12
   decoder_depth: 4
-  with_color: TRUE
+  with_color: True
   img_queries: 8
   text_queries: 1
-  pretrained_model_name: 'vit_base_patch32_clip_224.openai'
+  pretrained_model_name: vit_base_patch32_clip_224.openai
 
 npoints: 1024
 total_bs: 512

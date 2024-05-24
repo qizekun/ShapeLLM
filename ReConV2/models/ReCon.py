@@ -415,8 +415,9 @@ class PointTransformer(nn.Module):
         self.img_queries = config.img_queries
         self.text_queries = config.text_queries
         self.global_query_num = self.img_queries + self.text_queries
+        self.large_embedding = config.large_embedding
 
-        self.embed = PatchEmbedding(embed_dim=self.embed_dim, input_channel=self.input_channel)
+        self.embed = PatchEmbedding(embed_dim=self.embed_dim, input_channel=self.input_channel, large=self.large_embedding)
         self.pos_embed = PositionEmbeddingCoordsSine(3, self.embed_dim, 1.0)
 
         self.group_divider = Group(num_group=config.num_group, group_size=config.group_size)

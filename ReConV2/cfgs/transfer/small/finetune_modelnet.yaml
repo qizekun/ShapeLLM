@@ -14,15 +14,15 @@ dataset:
   train:
     _base_: ReConV2/cfgs/dataset_configs/ModelNet40.yaml
     others:
-      subset: 'train'
+      subset: train
   val:
     _base_: ReConV2/cfgs/dataset_configs/ModelNet40.yaml
     others:
-      subset: 'test'
+      subset: test
   test:
     _base_: ReConV2/cfgs/dataset_configs/ModelNet40.yaml
     others:
-      subset: 'test'
+      subset: 'test
   
 model:
   NAME: PointTransformer
@@ -33,8 +33,11 @@ model:
   num_heads: 6
   group_size: 32
   num_group: 64
-  with_color: FALSE
-  img_views: 12
+  with_color: False
+  large_embedding: False
+  img_queries: 13
+  text_queries: 3
+  decoder_depth: 4
 
 npoints: 1024
 total_bs: 32

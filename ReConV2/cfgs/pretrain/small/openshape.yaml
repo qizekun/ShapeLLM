@@ -1,7 +1,7 @@
 optimizer:
   type: AdamW
   kwargs:
-    lr: 0.00005
+    lr: 5e-5
     weight_decay: 0.05
 
 scheduler:
@@ -14,7 +14,7 @@ dataset:
   train:
     _base_: ReConV2/cfgs/dataset_configs/OpenShape.yaml
     others:
-      subset: 'train'
+      subset: train
       npoints: 10000
       rgb_random_drop_prob: 0.5
 
@@ -28,11 +28,12 @@ model:
   drop_path_rate: 0.1
   num_heads: 6
   decoder_depth: 4
-  with_color: True
+  with_color: False
+  large_embedding: False
   img_queries: 13
   text_queries: 3
-  pretrained_model_name: 'vit_small_patch14_dinov2.lvd142m'
-  
+  pretrained_model_name: vit_small_patch14_dinov2.lvd142m
+
 modelnet40:
   test_split: ReConV2/data/openshape/meta_data/modelnet40/test_split.json
   test_pc: ReConV2/data/openshape/meta_data/modelnet40/test_pc.npy

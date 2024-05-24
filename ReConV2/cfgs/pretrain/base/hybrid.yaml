@@ -1,7 +1,7 @@
 optimizer:
   type: AdamW
   kwargs:
-    lr: 0.0001
+    lr: 1e-4
     weight_decay: 0.05
 
 scheduler:
@@ -14,10 +14,10 @@ dataset:
   train:
     _base_: ReConV2/cfgs/dataset_configs/Hybrid.yaml
     others:
-      subset: 'train'
+      subset: train
       npoints: 1024
-      whole: TRUE
-      using_saved_features: TRUE
+      whole: True
+      using_saved_features: True
 
 model:
   NAME: ReCon2
@@ -30,10 +30,10 @@ model:
   drop_path_rate: 0.1
   num_heads: 12
   decoder_depth: 4
-  with_color: FALSE
+  with_color: False
   img_queries: 8
   text_queries: 3
-  pretrained_model_name: 'vit_base_patch32_clip_224.openai'
+  pretrained_model_name: vit_base_patch32_clip_224.openai
 
 npoints: 1024
 total_bs: 256

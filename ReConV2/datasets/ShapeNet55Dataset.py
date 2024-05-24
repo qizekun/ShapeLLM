@@ -12,8 +12,6 @@ from .build import DATASETS
 import torch.utils.data as data
 from ReConV2.utils.transforms import get_transforms
 
-import io
-import refile
 from joblib import Parallel, delayed
 
 
@@ -114,17 +112,7 @@ class ShapeNet(data.Dataset):
             img = self.read_single_img(sample, view_index)
         else:
             if self.using_saved_features:
-                img_list = f's3://qzk/features/shapenet/{index}.pt'
-                while True:
-                    try:
-                        with refile.smart_open(img_list, "rb") as f:
-                            bytes_data = f.read()
-                        break
-                    except:
-                        import time
-                        print('img_list', img_list)
-                        time.sleep(1)
-                img = torch.load(io.BytesIO(bytes_data))
+                pass
             else:
                 img_list = self.parallel_load_img(sample, max_workers=12)
                 img = torch.stack(img_list, dim=0)

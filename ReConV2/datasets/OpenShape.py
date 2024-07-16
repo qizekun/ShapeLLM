@@ -93,7 +93,6 @@ class OpenShape(data.Dataset):
 
         thumbnail_feat = np.expand_dims(data['thumbnail_feat'], axis=0)
         img_feat = np.concatenate([thumbnail_feat, data['image_feat']], axis=0)
-        img_feat = random.choice(img_feat)
         img_feat = torch.from_numpy(img_feat).type(torch.float32)
         text_feat = torch.tensor(text_feat).type(torch.float32)
 

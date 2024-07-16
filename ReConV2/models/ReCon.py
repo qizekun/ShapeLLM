@@ -420,7 +420,7 @@ class PointTransformer(nn.Module):
         self.embed = PatchEmbedding(embed_dim=self.embed_dim, input_channel=self.input_channel, large=self.large_embedding)
         self.pos_embed = PositionEmbeddingCoordsSine(3, self.embed_dim, 1.0)
 
-        self.group_divider = Group(num_group=config.num_group, group_size=config.group_size)
+        self.group_divider = ZGroup(num_group=config.num_group, group_size=config.group_size)
         print_log(f'[PointTransformer] divide point cloud into G{config.num_group} x S{config.group_size} points ...',
                   logger='PointTransformer')
 

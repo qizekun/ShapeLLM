@@ -123,7 +123,7 @@ Evaluate 3D MLLMs for integrated capabilities and embodied interaction capabilit
 ```
 sh scripts/eval/mmvet.sh
 ```
-Using GPT4 to calulate the 3D MM-Vet score:
+Using GPT-4 to calulate the 3D MM-Vet score:
 ```
 sh scripts/eval/eval_mmvet.sh
 ```
@@ -143,6 +143,9 @@ sh scripts/eval/eval_gapartnet.sh
 Please check out our [Model Zoo](https://github.com/qizekun/ShapeLLM/blob/main/docs/MODEL_ZOO.md) for all public ReCon++ checkpoints.
 
 ### Pretrain
+Download and organize data following [DATA](https://github.com/qizekun/ShapeLLM/blob/main/docs/DATA.md).
+If you encounter issues accessing Huggingface, please use `export HF_ENDPOINT=https://hf-mirror.com`.
+
 ReCon++ adopts a two-stage pre-training approach, initially conducting generative pre-training in either random or causal form, followed by cross-modal contrastive learning. It is worth noting that we employ a gradient stopping strategy for transfer learning tasks, while we do not use gradient stopping for zero-shot tasks.
 ```
 sh ReConV2/scripts/pretrain_reconstruch.sh <exp_name>
@@ -222,7 +225,7 @@ We use [PointVisualizaiton](https://github.com/qizekun/PointVisualizaiton) repo 
 If you find ShapeLLM or ReCon++ useful for your research and applications, please cite using this BibTeX:
 ```bibtex
 @article{qi2024shapellm,
-  author = {Qi, Zekun and Dong, Runpei and Zhang, Shaochen and Geng, Haoran and Han, Chunrui and Ge, Zheng and Wang, He and Yi, Li and Ma, Kaisheng},
+  author = {Qi, Zekun and Dong, Runpei and Zhang, Shaochen and Geng, Haoran and Han, Chunrui and Ge, Zheng and Yi, Li and Ma, Kaisheng},
   title = {ShapeLLM: Universal 3D Object Understanding for Embodied Interaction},
   journal = {arXiv preprint arXiv:2402.17766},
   year = {2024}

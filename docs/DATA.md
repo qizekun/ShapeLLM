@@ -32,7 +32,7 @@ The overall directory structure should be:
 ```
 │llava/
 │ReConV2/
-│  └──data/l
+│  └──data/
 │    ├──OpenShape/
 │    ├──ModelNet/
 │    ├──ModelNetFewshot/

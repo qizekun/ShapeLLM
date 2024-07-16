@@ -2,7 +2,7 @@
 
 *We present ShapeLLM, the first 3D Multimodal Large Language Model designed for embodied interaction, exploring a universal 3D object understanding with 3D point clouds and languages.*
 
-[Zekun Qi](https://qizekun.github.io/), [Runpei Dong](https://runpeidong.github.io/), [Shaochen Zhang](), [Haoran Geng](https://geng-haoran.github.io/), [Chunrui Han](), [Zheng Ge](https://joker316701882.github.io/), [He Wang](https://hughw19.github.io/), [Li Yi](https://ericyi.github.io) and [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html)
+[Zekun Qi](https://qizekun.github.io/), [Runpei Dong](https://runpeidong.web.illinois.edu/), [Shaochen Zhang](https://github.com/zsc000722), [Haoran Geng](https://geng-haoran.github.io/), [Chunrui Han](https://scholar.google.com/citations?user=D6tWz44AAAAJ), [Zheng Ge](https://joker316701882.github.io/), [Li Yi](https://ericyi.github.io) and [Kaisheng Ma](http://group.iiis.tsinghua.edu.cn/~maks/leader.html)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shapellm-universal-3d-object-understanding/3d-question-answering-3d-qa-on-3d-mm-vet)](https://paperswithcode.com/sota/3d-question-answering-3d-qa-on-3d-mm-vet?p=shapellm-universal-3d-object-understanding)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shapellm-universal-3d-object-understanding/zero-shot-transfer-3d-point-cloud-2)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud-2?p=shapellm-universal-3d-object-understanding)

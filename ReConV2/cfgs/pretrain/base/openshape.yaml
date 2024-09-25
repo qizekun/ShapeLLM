@@ -1,7 +1,7 @@
 optimizer:
   type: AdamW
   kwargs:
-    lr: 5e-5
+    lr: 1e-4
     weight_decay: 0.05
 
 scheduler:

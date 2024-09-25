@@ -24,15 +24,15 @@ dataset:
 
 model:
   NAME: PointTransformer
-  embed_dim: 384
-  depth: 12
+  embed_dim: 1024
+  depth: 24
   drop_path_rate: 0.2
   cls_dim: 87
-  num_heads: 6
+  num_heads: 16
   group_size: 32
   num_group: 64
   with_color: False
-  large_embedding: False
+  large_embedding: True
   img_queries: 10
   text_queries: 1
   decoder_depth: 4

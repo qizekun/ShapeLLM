@@ -1,17 +1,18 @@
 from PIL import Image
+from tqdm import tqdm
 from ReConV2.utils.misc import *
-from ReConV2.utils.config import *
-from ReConV2.datasets import build_dataset_from_cfg
+from ReConV2.datasets.HybridDataset import Hybrid_points
 from ReConV2.datasets.pc_render import Realistic_Projection
 
-dataset = 'hybrid'
-save_path = f'ReConV2/data/{dataset}/depth/'
+data_root = 'ReConV2/data/HybridDatasets/'
+save_path = 'ReConV2/data/HybridDatasets/depth/'
+batch_size = 32
 
-origin_config = cfg_from_yaml_file(f'ReConV2/cfgs/pretrain/{dataset}.yaml')
-config = origin_config.dataset.train
-config.others.img_views = 10
-dataset = build_dataset_from_cfg(config._base_, config.others)
-train_dataloader = torch.utils.data.DataLoader(dataset, batch_size=32,
+if not os.path.exists(save_path):
+    os.makedirs(save_path)
+
+dataset = Hybrid_points(data_root, 'train', 1024)
+train_dataloader = torch.utils.data.DataLoader(dataset, batch_size=batch_size,
                                                num_workers=8,
                                                drop_last=False,
                                                worker_init_fn=worker_init_fn,
@@ -22,23 +23,21 @@ get_img = pc_views.get_img
 
 
 def real_proj(pc, imsize=256):
-    img = get_img(pc.unsqueeze(0))
+    img = get_img(pc)
     img = torch.nn.functional.interpolate(img, size=(imsize, imsize), mode='bilinear', align_corners=True)
     return img
 
 
-for idx, (pts, _, _, index) in enumerate(train_dataloader):
-    print(idx)
+for pts, index in tqdm(train_dataloader):
     pts = pts.cuda()
     img = real_proj(pts)
-    B, n, c, w, h = img.shape
+    n, c, w, h = img.shape
+    batch_size = n // 10
+    img = img.reshape(batch_size, 10, c, w, h)
 
-    for i in range(B):
-        for j in range(n):
-            tensor_image = (img[i, j].numpy() * 255).astype(np.uint8)
+    for i in range(batch_size):
+        for j in range(10):
+            tensor_image = (img[i, j].cpu().detach().numpy() * 255).astype(np.uint8)
             pil_image = Image.fromarray(np.transpose(tensor_image, (1, 2, 0)))
-            if dataset == 'hybrid':
-                path = save_path + index[i].replace("/", "-")[:-4] + f'-{j}'
-            else:
-                path = save_path + index[i] + f'-{j}'
+            path = save_path + index[i].replace("/", "-")[:-4] + f'-{j}.png'
             pil_image.save(path)

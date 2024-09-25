@@ -12,11 +12,10 @@ scheduler:
 
 dataset:
   train:
-    _base_: ReConV2/cfgs/dataset_configs/Cap3D.yaml
+    _base_: ReConV2/cfgs/dataset_configs/Hybrid.yaml
     others:
       subset: train
       npoints: 1024
-      using_saved_features: True
 
 model:
   NAME: ReCon2
@@ -24,15 +23,18 @@ model:
   num_group: 64
   mask_ratio: 0.7
   mask_type: causal
-  embed_dim: 768
-  depth: 12
+  embed_dim: 1024
+  depth: 24
   drop_path_rate: 0.1
-  num_heads: 12
+  num_heads: 16
   decoder_depth: 4
-  with_color: True
-  img_queries: 8
+  with_color: False
+  stop_grad: True
+  large_embedding: True
+  img_queries: 10
   text_queries: 1
-  pretrained_model_name: vit_base_patch32_clip_224.openai
+  contrast_type: byol
+  pretrained_model_name: eva_large_patch14_336.in22k_ft_in22k_in1k
 
 npoints: 1024
 total_bs: 512

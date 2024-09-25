@@ -56,9 +56,9 @@ def run_net(args, config):
         print_log(f"Total number of trainable parameters: {trainable_params:.2f}M", logger=logger)
 
     if args.local_rank == 0:
-        modelnet40_loader = data.make_modelnet40test(config)
-        objaverse_lvis_loader = data.make_objaverse_lvis(config)
-        scanobjectnn_loader = data.make_scanobjectnntest(config)
+        modelnet40_loader = data.make_modelnet40test(config) if 'modelnet40' in config else None
+        objaverse_lvis_loader = data.make_objaverse_lvis(config) if 'objaverse_lvis' in config else None
+        scanobjectnn_loader = data.make_scanobjectnntest(config) if 'scanobjectnn' in config else None
     else:
         modelnet40_loader = None
         objaverse_lvis_loader = None
@@ -284,6 +284,8 @@ class Trainer(object):
                     self.save_model('epoch_{}_contrast'.format(self.epoch))
 
     def test_modelnet40(self):
+        if self.modelnet40_loader is None:
+            return
         self.model.eval()
         clip_text_feat = torch.from_numpy(self.modelnet40_loader.dataset.clip_cat_feat).to(self.device)
         per_cat_correct = torch.zeros(40).to(self.device)
@@ -333,6 +335,8 @@ class Trainer(object):
             logger=self.logger)
 
     def test_objaverse_lvis(self):
+        if self.objaverse_lvis_loader is None:
+            return
         self.model.eval()
         clip_text_feat = torch.from_numpy(self.objaverse_lvis_loader.dataset.clip_cat_feat).to(self.device)
         per_cat_correct = torch.zeros(1156).to(self.device)
@@ -378,6 +382,8 @@ class Trainer(object):
             logger=self.logger)
 
     def test_scanobjectnn(self):
+        if self.scanobjectnn_loader is None:
+            return
         self.model.eval()
         clip_text_feat = torch.from_numpy(self.scanobjectnn_loader.dataset.clip_cat_feat).to(self.device)
         per_cat_correct = torch.zeros(15).to(self.device)

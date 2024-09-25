@@ -1,7 +1,7 @@
 optimizer:
   type: AdamW
   kwargs:
-    lr: 1e-4
+    lr: 4e-5
     weight_decay: 0.05
 
 scheduler:
@@ -16,26 +16,27 @@ dataset:
     others:
       subset: train
       npoints: 1024
-      whole: True
-      using_saved_features: True
 
 model:
   NAME: ReCon2
   group_size: 32
   num_group: 64
-  mask_ratio: 0.7
+  mask_ratio: 0.6
+  mask_type: causal
   embed_dim: 384
   depth: 12
   drop_path_rate: 0.1
   num_heads: 6
   decoder_depth: 4
   with_color: False
+  stop_grad: True
   large_embedding: False
-  img_queries: 13
-  text_queries: 3
+  img_queries: 10
+  text_queries: 1
+  contrast_type: byol
   pretrained_model_name: vit_small_patch14_dinov2.lvd142m
 
 npoints: 1024
-total_bs: 256
+total_bs: 512
 step_per_update: 1
 max_epoch: 300

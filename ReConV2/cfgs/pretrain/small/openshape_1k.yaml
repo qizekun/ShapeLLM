@@ -15,15 +15,16 @@ dataset:
     _base_: ReConV2/cfgs/dataset_configs/OpenShape.yaml
     others:
       subset: train
-      npoints: 10000
+      npoints: 1024
       rgb_random_drop_prob: 0.5
+      occlusion: False
 
 model:
   NAME: ReCon2
   group_size: 32
-  num_group: 512
+  num_group: 64
   mask_ratio: 0.7
-  mask_type: rand
+  mask_type: causal
   embed_dim: 384
   depth: 12
   drop_path_rate: 0.1
@@ -31,7 +32,7 @@ model:
   decoder_depth: 4
   with_color: False
   stop_grad: True
-  large_embedding: False
+  large_embedding: True
   img_queries: 13
   text_queries: 3
   contrast_type: byol
@@ -59,7 +60,7 @@ scanobjectnn:
   batch_size: 128
   ratio: 0.3
 
-npoints: 10000
+npoints: 1024
 total_bs: 512
 step_per_update: 1
 max_epoch: 300

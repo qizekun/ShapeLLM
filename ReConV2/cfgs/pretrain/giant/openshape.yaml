@@ -27,7 +27,6 @@ model:
   mask_type: rand
   embed_dim: 1408
   depth: 40
-
   drop_path_rate: 0.1
   num_heads: 16
   decoder_depth: 4

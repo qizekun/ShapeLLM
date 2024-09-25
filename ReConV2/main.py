@@ -11,7 +11,6 @@ from ReConV2.tools import finetune_run_net as finetune
 from ReConV2.tools import zeroshot_run_net as zeroshot
 
 
-
 def main():
     # args
     args = parser.get_args()

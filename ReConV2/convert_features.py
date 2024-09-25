@@ -1,27 +1,34 @@
 from utils.misc import *
 from utils.config import *
-from datasets import build_dataset_from_cfg
-from models.CrossModal import VisionTransformer as ImageEncoder
+from datasets.HybridDataset import Hybrid_depth
 
-origin_config = cfg_from_yaml_file('ReConV2/cfgs/pretrain/base/cap3d.yaml')
-config = origin_config.dataset.train
-config.others.img_views = 8
-dataset = build_dataset_from_cfg(config._base_, config.others)
-train_dataloader = torch.utils.data.DataLoader(dataset, batch_size=32,
+import timm
+from tqdm import tqdm
+
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+clip_model = timm.create_model("vit_gigantic_patch14_clip_224.laion2b", pretrained=True).to(device)
+
+data_root = 'ReConV2/data/HybridDatasets/'
+img_path = 'ReConV2/data/HybridDatasets/depth/'
+save_path = 'ReConV2/data/HybridDatasets/depth_feature/'
+batch_size = 32
+
+if not os.path.exists(save_path):
+    os.makedirs(save_path)
+
+dataset = Hybrid_depth(data_root, 'train', img_path)
+train_dataloader = torch.utils.data.DataLoader(dataset, batch_size=batch_size,
                                                num_workers=8,
                                                drop_last=False,
                                                worker_init_fn=worker_init_fn,
                                                pin_memory=True)
 
-result = {}
-img_encoder = ImageEncoder(origin_config.model).cuda()
-
-for idx, (_, img, _, index) in enumerate(train_dataloader):
-    print(idx)
-    B, n, c, w, h = img.shape
-    img = img.cuda()
-    img = img.reshape(B * n, c, w, h)
-    feature = img_encoder(img)
+for img, id in tqdm(train_dataloader):
+    B, n, h, w, c = img.shape
+    img = img.reshape(B * n, h, w, c)
+    img = img.to(device)
+    feature = clip_model(img)
     feature = feature.reshape(B, n, -1)
     for i in range(B):
-        torch.save(feature[i].cpu(), f'/data/features/cap3d/{index[i]}.pt')
+        torch.save(feature[i].cpu(), save_path + id[i] + '.pt')

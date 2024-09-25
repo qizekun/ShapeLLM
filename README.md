@@ -34,7 +34,7 @@
 ## Contents
 - [Install](#install)
 - [Model Zoo](https://github.com/qizekun/ShapeLLM/blob/main/docs/MODEL_ZOO.md)
-- [Dataset](https://github.com/qizekun/ShapeLLM/blob/main/docs/Data.md)
+- [Dataset](https://github.com/qizekun/ShapeLLM/blob/main/docs/DATA.md)
 - [ShapeLLM](#ShapeLLM)
   - [Demo](#Demo)
   - [Training](#Training)
@@ -81,6 +81,7 @@ Please check out our [Model Zoo](https://github.com/qizekun/ShapeLLM/blob/main/d
 ### Demo
 #### CLI Inference
 Chat about point clouds using CLI interface. It also supports multiple GPUs, 4-bit and 8-bit quantized inference.
+If you encounter issues accessing Huggingface, please use `export HF_ENDPOINT=https://hf-mirror.com`.
 ```Shell
 python -m llava.serve.cli \
     --model-path qizekun/ShapeLLM_13B_general_v1.0 \
@@ -165,11 +166,11 @@ sh ReConV2/scripts/pretrain_contrast.sh <exp_name> <path/to/stage1-pre-trained/m
 
 Fine-tuning with the default configuration, run the script:
 ```
-bash ReConV2/scripts/cls.sh <GPU> <exp_name> <path/to/pre-trained/model>
+bash ReConV2/scripts/downstream/cls.sh <GPU> <exp_name> <path/to/pre-trained/model>
 ```
 Test&Voting with the default configuration, run the script:
 ```
-bash ReConV2/scripts/test.sh <GPU> <exp_name> <path/to/best/fine-tuned/model>
+bash ReConV2/scripts/downstream/test.sh <GPU> <exp_name> <path/to/best/fine-tuned/model>
 ```
 
 ### Few-shot-Learning
@@ -182,7 +183,7 @@ bash ReConV2/scripts/test.sh <GPU> <exp_name> <path/to/best/fine-tuned/model>
 
 Few-shot with the default configuration, run the script:
 ```
-sh ReConV2/scripts/fewshot.sh <GPU> <exp_name> <path/to/pre-trained/model> <way> <shot> <fold>
+sh ReConV2/scripts/downstream/fewshot.sh <GPU> <exp_name> <path/to/pre-trained/model> <way> <shot> <fold>
 ```
 
 ### Zero-shot-Learning
@@ -197,7 +198,7 @@ sh ReConV2/scripts/fewshot.sh <GPU> <exp_name> <path/to/pre-trained/model> <way>
 In the pre-training process, Zero-shot evaluation is enabled by default.
 Zero-shot with the default configuration, run the script:
 ```
-bash ReConV2/scripts/zeroshot.sh <GPU> <exp_name> <path/to/pre-trained/model>
+bash ReConV2/scripts/downstream/zeroshot.sh <GPU> <exp_name> <path/to/pre-trained/model>
 ```
 
 
@@ -219,6 +220,16 @@ We believe that 3D MM-Vet and 3D MM-Vet-C are valuable resources for the 3D QA c
 
 ## Visualization
 We use [PointVisualizaiton](https://github.com/qizekun/PointVisualizaiton) repo to render beautiful point cloud images, including specified color rendering and attention distribution rendering.
+
+## Acknowledgement
+
+This codebase is built upon [LLaVA](https://github.com/haotian-liu/LLaVA), [OpenShape](https://github.com/Colin97/OpenShape_code), [ReCon](https://github.com/qizekun/ReCon) and [PointGPT](https://github.com/CGuangyan-BIT/PointGPT).
+
+## Related Works
+
+- [Point-Bind & Point-LLM](https://arxiv.org/abs/2309.00615)
+- [3D-LLM](https://arxiv.org/abs/2307.12981)
+- [PointLLM](http://arxiv.org/abs/2308.16911)
 
 ## Citation
 
@@ -249,13 +260,3 @@ and closely related work [ReCon](https://github.com/qizekun/ReCon) and [ACT](htt
   year={2023}
 }
 ```
-
-## Acknowledgement
-
-This codebase is built upon [LLaVA](https://github.com/haotian-liu/LLaVA), [OpenShape](https://github.com/Colin97/OpenShape_code), [ReCon](https://github.com/qizekun/ReCon) and [PointGPT](https://github.com/CGuangyan-BIT/PointGPT).
-
-## Related Works
-
-- [Point-Bind & Point-LLM](https://arxiv.org/abs/2309.00615)
-- [3D-LLM](https://arxiv.org/abs/2307.12981)
-- [PointLLM](http://arxiv.org/abs/2308.16911)

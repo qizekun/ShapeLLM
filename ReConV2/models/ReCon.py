@@ -233,7 +233,7 @@ class MaskTransformer(nn.Module):
 class ReCon2(nn.Module):
     def __init__(self, config):
         super().__init__()
-        print_log(f'[ReCon]', logger='ReCon')
+        print_log(f'[ReCon V2]', logger='ReCon V2')
         self.config = config
         self.embed_dim = config.embed_dim
         self.with_color = config.with_color
@@ -458,10 +458,8 @@ class PointTransformer(nn.Module):
         )
 
         self.loss_ce = nn.CrossEntropyLoss()
-
         # chamfer distance loss
         self.cd_loss = ChamferDistance()
-
         self.apply(self._init_weights)
 
     def get_loss_acc(self, ret, gt):

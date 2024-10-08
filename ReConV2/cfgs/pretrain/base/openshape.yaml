@@ -31,7 +31,7 @@ model:
   num_heads: 12
   decoder_depth: 4
   with_color: True
-  stop_grad: True
+  stop_grad: False
   large_embedding: False
   img_queries: 13
   text_queries: 3

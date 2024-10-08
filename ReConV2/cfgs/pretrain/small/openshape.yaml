@@ -29,8 +29,8 @@ model:
   drop_path_rate: 0.1
   num_heads: 6
   decoder_depth: 4
-  with_color: False
-  stop_grad: True
+  with_color: True
+  stop_grad: False
   large_embedding: False
   img_queries: 13
   text_queries: 3

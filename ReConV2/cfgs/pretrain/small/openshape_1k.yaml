@@ -32,7 +32,7 @@ model:
   decoder_depth: 4
   with_color: False
   stop_grad: True
-  large_embedding: True
+  large_embedding: False
   img_queries: 13
   text_queries: 3
   contrast_type: byol

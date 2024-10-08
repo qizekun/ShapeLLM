@@ -149,10 +149,12 @@ If you encounter issues accessing Huggingface, please use `export HF_ENDPOINT=ht
 
 ReCon++ adopts a two-stage pre-training approach, initially conducting generative pre-training in either random or causal form, followed by cross-modal contrastive learning. It is worth noting that we employ a gradient stopping strategy for transfer learning tasks, while we do not use gradient stopping for zero-shot tasks.
 ```
-sh ReConV2/scripts/pretrain_reconstruch.sh <exp_name>
+sh ReConV2/scripts/pretrain_zeroshot/pretrain_reconstruct.sh <exp_name>
+sh ReConV2/scripts/pretrain_transfer/pretrain_reconstruct.sh <exp_name>
 ```
 ```
-sh ReConV2/scripts/pretrain_contrast.sh <exp_name> <path/to/stage1-pre-trained/model>
+sh ReConV2/scripts/pretrain_zeroshot/pretrain_contrast.sh <exp_name> <path/to/stage1-pre-trained/model>
+sh ReConV2/scripts/pretrain_transfer/pretrain_contrast.sh <exp_name> <path/to/stage1-pre-trained/model>
 ```
 
 ### Classification
